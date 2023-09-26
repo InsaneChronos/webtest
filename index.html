@@ -4,11 +4,11 @@
 
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="fonts/stylesheet.css" />
+<link rel="stylesheet" href="fonts/stylesheet.css">
 
 <script src="script.js"></script>
 
@@ -18,35 +18,45 @@
 
 <div id="open-menu" onclick="openNav()">&#9776;</div>
 
-<div id="close-menu" onclick="closeNav()">&times;</div>
-
 <div id="mySidenav" class="sidenav">
+
+<div id="close-menu" onclick="closeNav()">&times;</div>
 
 <div id="nav-links">
 
 <a href="index.html">ГЛАВНАЯ</a>
-<a href="#">НОВОСТИ</a>
-<a href="#">МУЗЫКА</a>
-<a href="#">ФОТО</a>
-<a href="#">ВИДЕО</a>
-<a href="#">О&nbsp;НАС</a>
-<a href="#">СЛОВА&nbsp;ПЕСЕН</a>
-<a href="#">СВЯЗАТЬСЯ</a>
-<a href="#">ЛАВКА</a>
+<a href="news.html">НОВОСТИ</a>
+<a href="music.html">МУЗЫКА</a>
+<a href="photos.html">ФОТО</a>
+<a href="videos.html">ВИДЕО</a>
+<a href="about.html">О&nbsp;НАС</a>
+<a href="lyrics.html">СЛОВА&nbsp;ПЕСЕН</a>
+<a href="contacts.html">СВЯЗАТЬСЯ</a>
+<a href="shop.html">ЛАВКА</a>
+
+</div>
+
+<div id="subscribe">
+
+<h2>ПОДПИСКА&nbsp;НА&nbsp;НОВОСТИ</h2>
+
+<input type="text" class="mail" placeholder="e-mail" name="mail" required>
+
+<input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe">
 
 </div>
   
 <div id="social">
 
 <ul>
-<li>
-<li>
-<li>
-<li>
-<li>
-<li>
-<li>
-<li>
+<li><div class="social-links"></div>
+<li><div class="social-links"></div>
+<li><div class="social-links"></div>
+<li><div class="social-links"></div>
+<li><div class="social-links"></div>
+<li><div class="social-links"></div>
+<li><div class="social-links"></div>
+<li><div class="social-links"></div>
 </ul>
 
 </div>
@@ -69,4 +79,4 @@ document.querySelectorAll('a[href="'+document.URL+'"]').forEach(link => link.cla
 
 </script>
 
-</html> 
+</html>
