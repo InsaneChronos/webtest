@@ -10,15 +10,15 @@
 
 <link rel="stylesheet" href="fonts/stylesheet.css">
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </head>
 
 <body>
 
-<div id="open-menu" onclick="openNav()">&#9776;</div>
+<div id="open-menu" class="scale" onclick="openNav()">&#9776;</div>
 
-<div id="mySidenav" class="sidenav">
+<div id="sidenav" class="sidenav">
 
 <div id="close-menu" onclick="closeNav()">&times;</div>
 
@@ -49,36 +49,32 @@
 <div id="social">
 
 <ul>
-<li><div class="social-links"></div>
-<li><div class="social-links"></div>
-<li><div class="social-links"></div>
-<li><div class="social-links"></div>
-<li><div class="social-links"></div>
-<li><div class="social-links"></div>
-<li><div class="social-links"></div>
-<li><div class="social-links"></div>
+<li><div class="social-links scale"></div>
+<li><div class="social-links scale"></div>
+<li><div class="social-links scale"></div>
+<li><div class="social-links scale"></div>
+<li><div class="social-links scale"></div>
+<li><div class="social-links scale"></div>
+<li><div class="social-links scale"></div>
+<li><div class="social-links scale"></div>
 </ul>
 
 </div>
 
+<div id="buymerch"></div>
+
 </div>
+
+<div id="ruLangRu" class="scale" onclick="selectLangRu()">RU</div>
+
+<div id="langContainer"><a href="https://insanechronos.github.io/webtest/en/" target="_self"><div id="ruLangEn">EN</div></a></div>
 
 <div id="main">
 
-<div>
-
-<div id="lang">RU</div>
-
-</div>
+<div id="mainContent">РУССКАЯ ВЕРСИЯ</div>
 
 </div>
    
 </body>
-
-<script>
-
-document.querySelectorAll('a[href="'+document.URL+'"]').forEach(link => link.className += 'current-link');
-
-</script>
 
 </html>
