@@ -69,6 +69,7 @@ if(window.innerHeight > window.innerWidth){
 	document.getElementById("social-links").style.flexWrap = "wrap";
 	document.getElementById("social-links").style.top = "-15px";
 	document.getElementById("social-links").style.left = "0px";
+	document.getElementById("social-links").style.transition = "0s";
 	document.getElementById("open-menu").style.display = "flex";
 
     var social = document.getElementsByClassName("social-link");
