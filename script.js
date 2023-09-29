@@ -45,10 +45,18 @@ function selectLangEn() {
 	}
 
 if(window.innerHeight > window.innerWidth){
+
 	function openNav() {
 		document.getElementById("sidenav").style.width = "100%";
 		document.getElementById("sidenav").style.textAlign = "center";
 		document.getElementById("ruLangRu").style.zIndex = "998";
 		document.getElementById("close-menu").style.display = "flex";
+		}
+		
+	function closeNav() {
+		document.getElementById("ruLangRu").style.zIndex = "999";
+		document.getElementById("sidenav").style.width = "0";
+		ment.getElementById("open-menu").style.display = "flex";
+		document.getElementById("social").style.marginLeft = "0px";
 		}
 	}
