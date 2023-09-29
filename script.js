@@ -2,14 +2,12 @@ document.querySelectorAll('a[href="'+document.URL+'"]').forEach(link => link.cla
 
 function openNav() {
   document.getElementById("sidenav").style.width = "220px";
-  document.getElementById("close-menu").style.transform = "rotate(90deg)";
   document.getElementById("close-menu").style.display = "flex";
   document.getElementById("social").style.marginLeft = "220px";
 }
 
 function closeNav() {
 	document.getElementById("sidenav").style.width = "0";
-	document.getElementById("open-menu").style.transform = "rotate(0deg)";
 	document.getElementById("open-menu").style.display = "flex";
 	document.getElementById("social").style.marginLeft = "0px";
 	}
@@ -49,5 +47,8 @@ function selectLangEn() {
 if(window.innerHeight > window.innerWidth){
 	function openNav() {
 		document.getElementById("sidenav").style.width = "100%";
+		document.getElementById("sidenav").style.textAlign = "center";
+		document.getElementById("ruLangRu").style.zIndex = "998";
+		document.getElementById("close-menu").style.display = "flex";
 		}
 	}
