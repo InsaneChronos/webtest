@@ -141,29 +141,77 @@ body a {
 	margin: 30px 0 10px 0;
 	}	
 
-#social {
-	width: 64px;
+#social-links {
+	width: 40px;
+	height: 390px;
 	position: fixed;
 	transition: 0.35s;
 	top: 96px;
-	left: 36.5px;
-	}
-
-#social ul {
+	left: 35px;
 	list-style: none;
 	padding: 0;
+	margin: 0;
 	}
 
-.social-links {
+#social-links a {
+	display: contents;
+	}
+
+#social-links li {
+	display: contents;
+	}
+
+.social-link {
 	width: 40px;
 	height: 40px;
-	background: #aaa;
 	border-radius: 50px;
 	margin: 10px 0;
 	}
 
-.social-links:hover {
-	background: #D9974B;
+.social-link:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+	}
+
+#facebook {
+	background: url(assets/facebook.svg) center no-repeat #212120;
+	background-size: contain;
+	margin-top: 0;
+	}
+
+#vk {
+	background: url(assets/vk.svg) center no-repeat #212120;
+	background-size: contain;
+	}
+
+#youtube {
+	background: url(assets/youtube.svg) center no-repeat #212120;
+	background-size: contain;
+	}
+
+#instagram {
+	background: url(assets/instagram.svg) center no-repeat #212120;
+	background-size: contain;
+	}
+
+#soundcloud {
+	background: url(assets/soundcloud.svg) center no-repeat #212120;
+	background-size: contain;
+	}
+
+#bandcamp {
+	background: url(assets/bandcamp.svg) center no-repeat #212120;
+	background-size: contain;
+	}
+
+#itunes {
+	background: url(assets/itunes.svg) center no-repeat #212120;
+	background-size: contain;
+	}
+
+#googleplay {
+	background: url(assets/googleplay.svg) center no-repeat #212120;
+	background-size: contain;
+	margin-bottom: 0;
 	}
 
 #nav-links {
@@ -209,7 +257,7 @@ body a {
 	}
 
 #buymerch {
-	width: 100%;
+	width: 220px;
 	height: 150px;
 	margin: 50px auto;
 	background: url(assets/merch.svg) center no-repeat;
@@ -228,7 +276,7 @@ body a {
 	align-items: center;
 	color: #aaa;
 	top: 30px;
-	left: calc(100% - 108px);
+	left: calc(100% - 108.85px);
 	transition: 0.35s;
 	opacity: 0;
 	}
