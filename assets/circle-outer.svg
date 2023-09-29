@@ -1,0 +1,67 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<style>
+		:root {width:200px; height: 200px;}
+	</style>
+
+	<defs>
+		<g id="lines" style="stroke: #D9974B;">
+			<line x1=" 90" x2=" 100" />
+			<line x1="-90" x2="-100" />
+			<line y1=" 90" y2=" 100" />
+			<line y1="-90" y2="-100" />
+		</g>
+
+	</defs>
+
+	<g transform="translate(100 100)">
+
+		<use xlink:href="#lines" transform="rotate(2)"/>
+		<use xlink:href="#lines" transform="rotate(4)"/>
+		<use xlink:href="#lines" transform="rotate(6)"/>
+		<use xlink:href="#lines" transform="rotate(8)"/>
+		<use xlink:href="#lines" transform="rotate(10)"/>
+		<use xlink:href="#lines" transform="rotate(12)"/>
+		<use xlink:href="#lines" transform="rotate(14)"/>
+		<use xlink:href="#lines" transform="rotate(16)"/>
+		<use xlink:href="#lines" transform="rotate(18)"/>
+		<use xlink:href="#lines" transform="rotate(20)"/>
+		<use xlink:href="#lines" transform="rotate(22)"/>
+		<use xlink:href="#lines" transform="rotate(24)"/>
+		<use xlink:href="#lines" transform="rotate(26)"/>
+		<use xlink:href="#lines" transform="rotate(28)"/>
+		<use xlink:href="#lines" transform="rotate(30)"/>
+		<use xlink:href="#lines" transform="rotate(32)"/>
+		<use xlink:href="#lines" transform="rotate(34)"/>
+		<use xlink:href="#lines" transform="rotate(36)"/>
+		<use xlink:href="#lines" transform="rotate(38)"/>
+		<use xlink:href="#lines" transform="rotate(40)"/>
+		<use xlink:href="#lines" transform="rotate(42)"/>
+		<use xlink:href="#lines" transform="rotate(44)"/>
+		<use xlink:href="#lines" transform="rotate(46)"/>
+		<use xlink:href="#lines" transform="rotate(48)"/>
+		<use xlink:href="#lines" transform="rotate(50)"/>
+		<use xlink:href="#lines" transform="rotate(52)"/>
+		<use xlink:href="#lines" transform="rotate(54)"/>
+		<use xlink:href="#lines" transform="rotate(56)"/>
+		<use xlink:href="#lines" transform="rotate(58)"/>
+		<use xlink:href="#lines" transform="rotate(60)"/>
+		<use xlink:href="#lines" transform="rotate(62)"/>
+		<use xlink:href="#lines" transform="rotate(64)"/>
+		<use xlink:href="#lines" transform="rotate(66)"/>
+		<use xlink:href="#lines" transform="rotate(68)"/>
+		<use xlink:href="#lines" transform="rotate(70)"/>
+		<use xlink:href="#lines" transform="rotate(72)"/>
+		<use xlink:href="#lines" transform="rotate(74)"/>
+		<use xlink:href="#lines" transform="rotate(76)"/>
+		<use xlink:href="#lines" transform="rotate(78)"/>
+		<use xlink:href="#lines" transform="rotate(80)"/>
+		<use xlink:href="#lines" transform="rotate(82)"/>
+		<use xlink:href="#lines" transform="rotate(84)"/>
+		<use xlink:href="#lines" transform="rotate(86)"/>
+		<use xlink:href="#lines" transform="rotate(88)"/>
+		<use xlink:href="#lines" transform="rotate(90)"/>
+
+	</g>
+
+</svg>
