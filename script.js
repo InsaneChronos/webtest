@@ -74,6 +74,10 @@ if(window.innerHeight > window.innerWidth){
 
     var social = document.getElementsByClassName("social-link");
     var count;
-    for (count = 0; count < social.length; count++) {social[count].style.margin = "5px";}
+    for (count = 0; count < social.length; count++) {
+		social[count].style.margin = "5px";
+		social[count].style.width = "30px";
+		social[count].style.height = "30px";
+		}
 
 	}
