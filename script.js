@@ -62,12 +62,12 @@ if(window.innerHeight > window.innerWidth){
 
 	document.getElementById("social-links").style.width = "100%";
 	document.getElementById("social-links").style.height = "100%";
+	document.getElementById("social-links").style.position = "relative";
 	document.getElementById("social-links").style.display = "flex";
 	document.getElementById("social-links").style.alignItems = "baseline";
 	document.getElementById("social-links").style.justifyContent = "center";
 	document.getElementById("social-links").style.alignContent = "flex-end";
-	document.getElementById("social-links").style.flexWrap = "wrap";
-	document.getElementById("social-links").style.top = "-15px";
+	document.getElementById("social-links").style.top = "0px";
 	document.getElementById("social-links").style.left = "0px";
 	document.getElementById("social-links").style.transition = "0s";
 	document.getElementById("open-menu").style.display = "flex";
