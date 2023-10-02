@@ -1,7 +1,6 @@
 body {
-	background-color: #212120;
+	background-color: #212121;
 	margin: 0;
-	z-index: 0;
 	}
 
 body a {
@@ -25,6 +24,35 @@ body a {
 	object-fit: cover;
 	z-index: -999;
 	}
+
+#topNav {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	}
+
+.title {
+	width: 50%;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family: "Magistral";
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 10px;
+	text-align: center;
+	margin: 40px auto;
+	color: #7D7D7D;
+}
+
+#titleTop {
+	margin: 25px auto 0 auto !important;
+}
+
+#titleFooter {
+	margin: 65px auto 0 auto !important;
+}
 
 .sidenav {
 	height: 100%;
@@ -86,7 +114,7 @@ body a {
 	border: 1px solid #aaa;
 	border-radius: 50%;
 	color: transparent;
-	top: 30px;
+	top: 25px;
 	left: 30px;
 	}
 
@@ -113,7 +141,7 @@ body a {
 	border: 0;
 	border-radius: 50%;
 	color: #212120;
-	top: 30px;
+	top: 25px;
 	left: 85px;
 	}
 
@@ -138,7 +166,7 @@ body a {
 	font-style: normal;
 	letter-spacing: 2px;
 	text-align: center;
-	margin: 30px 0 10px 0;
+	margin: 50px auto 10px auto;
 	}	
 
 #social-links {
@@ -146,7 +174,7 @@ body a {
 	height: 390px;
 	position: fixed;
 	transition: 0.35s;
-	top: 96px;
+	top: 90px;
 	left: 35px;
 	list-style: none;
 	padding: 0;
@@ -168,7 +196,16 @@ body a {
 	margin: 10px 0;
 	}
 
-.social-link:hover {
+.social-link:hover,
+#logo:hover,
+#merch:hover,
+#nuts:hover,
+#news:hover,
+#contacts:hover,
+#music:hover,
+#texts:hover,
+#video:hover,
+#photo:hover {
 	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
 	}
 
@@ -217,7 +254,7 @@ body a {
 #nav-links {
 	height: 325px;
 	background: #D9974B;
-	padding-top: 100px;
+	padding-top: 85px;
 	text-transform: uppercase;
 	font-family: "Magistral";
 	font-weight: 300;
@@ -231,12 +268,13 @@ body a {
 	border-bottom: 1px solid #aaa;
 	border-left: 0;
 	border-right: 0;
-	margin-bottom: 10px;
 	background: transparent;
 	color: #aaa;
+	text-align: center;
 	}
 
 .subscribe {
+	width: 100%;
 	color: #fff;
 	font-size: 10px;
 	text-transform: uppercase;
@@ -247,6 +285,7 @@ body a {
 	padding: 15px;
 	border: 1px solid #aaa;
 	letter-spacing: 2px;
+	margin: 10px auto 50px auto;
 	}
 
 .subscribe:hover {
@@ -254,13 +293,6 @@ body a {
 	background: #D9974B;
 	padding: 15px;
 	border: 1px solid #D9974B;
-	}
-
-#buymerch {
-	width: 220px;
-	height: 150px;
-	margin: 50px auto;
-	background: url(assets/merch.svg) center no-repeat;
 	}
 
 #langContainer {
@@ -297,7 +329,7 @@ body a {
 	border: 1px solid #aaa;
 	border-radius: 50%;
 	color: #aaa;
-	top: 30px;
+	top: 25px;
 	left: calc(100% - 85px);
 	font-size: 15px;
 	text-transform: uppercase;
@@ -338,21 +370,21 @@ body a {
 	}
 
 @keyframes scale {
-	0% {transform: scale(0);}
-	100% {transform: scale(1);}
+	0% {transform: scale(0); opacity: 0;}
+	100% {transform: scale(1); opacity: 1;}
 	}
 
 .scale {
-	animation: .75s linear 0s 1 scale;
+	animation: .5s linear 0s 1 scale;
 	}
 
 @keyframes fadeIn {
-	0% {opacity: 0;}
+	0% {opacity: .5;}
 	100% {opacity: 1;}
 	}
 
 .fadeIn {
-	animation: .75s linear 0s 1 fadeIn;
+	animation: 1s linear 0s 1 fadeIn;
 	}
 
 .circular {
@@ -362,7 +394,7 @@ body a {
 	border-radius: 50%;
 	transform: rotate(45deg);
 	display: block;
-	animation: circle .75s 1 linear;
+	animation: circle .5s 1 linear;
 	border-image: url(assets/circle-inner.svg) 50 50;
 	}
 
@@ -372,18 +404,18 @@ body a {
 	inset: -50px;
 	border-radius: 50%;
 	border: 50px solid;
-	animation: circular 1.5s infinite linear;
-	animation-delay: .75s;
+	animation: circular 2s infinite linear;
+	animation-delay: .5s;
 	opacity: 0;
 	border-image: url(assets/circle-outer.svg) 50 50;
 	}
 
 @keyframes circle {
-	0% {clip-path:polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0); opacity:0}
+	0% {clip-path:polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);}
 	25% {clip-path:polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)}
 	50% {clip-path:polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)}
 	75% {clip-path:polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)}
-	100% {clip-path:polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0); opacity:1}
+	100% {clip-path:polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);}
 	}
 
 @keyframes circular {
@@ -398,20 +430,188 @@ body a {
 	100% {clip-path:polygon(50% 50%, 0 0, 0 100%, 0 0, 0 100%, 0 0);opacity:1}
 	}
 
-#logo {
-	width: 174px;
-	height: 174px;
+.ring {
+	border: 1px solid #7D7D7D;
 	border-radius: 50%;
-	background: url(assets/logo-idle.png) center no-repeat;
+	position: fixed;
+	opacity: .25;
+	}
+
+#ring-1 {
+	width: 300px;
+	height: 300px;
+	animation-delay: .25s;
+	animation: .5s linear 0s 1 showRing;
+	}
+
+#ring-2 {
+	width: 400px;
+	height: 400px;
+	animation-delay: .5s;
+	animation: .75s linear 0s 1 showRing;
+	}
+
+#ring-3 {
+	width: 500px;
+	height: 500px;
+	animation-delay: 75s;
+	animation: 1s linear 0s 1 showRing;
+	}
+
+@keyframes showRing {
+	0% {opacity: 0;}
+	99.5% {opacity: 0;}
+	100% {opacity: .25;}
+	}
+
+#logo {
+	width: 164px;
+	height: 164px;
+	border-radius: 50%;
+	background: url(assets/logo.svg) center no-repeat;
+	background-size: contain;
 	position: absolute;
-	transition: .35s;
 	}
 
-#logo:hover {
-	background: url(assets/logo-hover.png) center no-repeat;
+#logoLink {
+	display: contents;
 	}
 
-@media (orientation: portrait) {
-	#open-menu {left: 25px;}
-	#close-menu {left: 25px;}
+#menu {
+	width: 400px;
+	height: 400px;
+	position: fixed;
+	display: contents;
+	}
+
+@keyframes scaleLink {
+	0% {transform: scale(0); opacity: 0;}
+	75% {transform: scale(0); opacity: 0;}
+	100% {transform: scale(1); opacity: 1;}
+	}
+
+.linkContainer {
+	border: 1px solid #5D5D5D;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 990;
+	transition: 0.35s;
+	padding: 3px;
+	animation: 1.5s linear 0s 1 scaleLink;
+	}
+
+.linkContainer:hover {
+	transform: scale(1.25);
+	}
+
+.menuLink {
+	width: 40px;
+	height: 40px;
+	display: block;
+	border-radius: 50%;
+	}
+
+.menuTitle {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	font-size: 8px;
+	text-transform: uppercase;
+	font-family: "Magistral";
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0px;
+	margin-top: 5px;
+	width: 86%;
+	transition: 0.35s;
+	opacity: 0;
+	}
+
+.menuTitle a {
+	color: #D9974B;
+	}
+
+.linkContainer:hover .menuTitle {
+	letter-spacing: 2px;
+	opacity: 1;
+	}
+
+#newsContainer {
+	margin-bottom: 400px;
+	}
+
+#news {
+	background: url(assets/news.svg) center no-repeat #7D7D7D;
+	}
+
+#contactsContainer {
+	margin-right: 350px;
+	margin-bottom: 200px;
+	}
+
+#contacts {
+	background: url(assets/contacts.svg) center no-repeat #7D7D7D;
+	}
+
+#musicContainer {
+	margin-left: 350px;
+	margin-bottom: 200px;	
+	}
+
+#music {
+	background: url(assets/music.svg) center no-repeat #7D7D7D;
+	}
+
+#textsContainer {
+	margin-right: 350px;
+	margin-top: 200px;
+	}
+
+#texts {
+	background: url(assets/texts.svg) center no-repeat #7D7D7D;
+	}
+
+#videoContainer {
+	margin-left: 350px;
+	margin-top: 200px;
+	}
+
+#video {
+	background: url(assets/video.svg) center no-repeat #7D7D7D;
+	}
+
+#photoContainer {
+	margin-top: 400px;
+	}
+
+#photo {
+	background: url(assets/photo.svg) center no-repeat #7D7D7D;
+	}
+
+#footer {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	}
+
+#merch {
+	width: 60px;
+	height: 50px;
+	margin: 25px auto;
+	background: url(assets/merch.svg) center no-repeat;
+	position: absolute;
+	background-size: contain;
+	left: 25px;
+	}
+
+#nuts {
+	width: 60px;
+	height: 35px;
+	margin: 35px auto;
+	background: url(assets/nuts.svg) center bottom no-repeat;
+	position: absolute;
+	background-size: cover;
+	right: 28px;
 	}
