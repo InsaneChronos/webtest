@@ -19,11 +19,11 @@ function selectLangRu() {
 	
 	document.getElementById("langContainer").style.opacity = "1";
 	document.getElementById("ruLangEn").style.display = "flex";
-	document.getElementById("langContainer").style.marginTop = "40px";
+	document.getElementById("langContainer").style.marginTop = "35px";
 	
 	if (actualOpacity == "1") {
 		langOpacity.style.opacity = "0";
-		langOpacity.style.marginTop = "-40px";
+		langOpacity.style.marginTop = "-35px";
 		}
 	
 	}
@@ -35,11 +35,11 @@ function selectLangEn() {
 	
 	document.getElementById("langContainer").style.opacity = "1";
 	document.getElementById("enLangRu").style.display = "flex";
-	document.getElementById("langContainer").style.marginTop = "40px";
+	document.getElementById("langContainer").style.marginTop = "35px";
 	
 	if (actualOpacity == "1") {
 		langOpacity.style.opacity = "0";
-		langOpacity.style.marginTop = "-40px";
+		langOpacity.style.marginTop = "-35px";
 		}
 	
 	}
@@ -51,6 +51,7 @@ if(window.innerHeight > window.innerWidth){
 		document.getElementById("sidenav").style.textAlign = "center";
 		document.getElementById("ruLangRu").style.zIndex = "998";
 		document.getElementById("close-menu").style.display = "flex";
+		document.getElementById("close-menu").style.left = "calc(50% - 16px)";
 		}
 		
 	function closeNav() {
@@ -71,6 +72,7 @@ if(window.innerHeight > window.innerWidth){
 	document.getElementById("social-links").style.left = "0px";
 	document.getElementById("social-links").style.transition = "0s";
 	document.getElementById("open-menu").style.display = "flex";
+	document.getElementById("footer").style.background = "#212120";
 
     var social = document.getElementsByClassName("social-link");
     var count;
