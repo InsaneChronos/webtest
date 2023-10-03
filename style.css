@@ -44,15 +44,15 @@ body a {
 	text-align: center;
 	margin: 40px auto;
 	color: #7D7D7D;
-}
+	}
 
 #titleTop {
-	margin: 25px auto 0 auto !important;
-}
+	margin: 25px auto 0 auto;
+	}
 
 #titleFooter {
-	margin: 65px auto 0 auto !important;
-}
+	margin: 65px auto 0 auto;
+	}
 
 .sidenav {
 	height: 100%;
@@ -155,6 +155,7 @@ body a {
 	display: grid;
 	align-content: center;
 	justify-content: center;
+	margin: auto;
 	}
 
 #subscribe h2 {
@@ -167,11 +168,13 @@ body a {
 	letter-spacing: 2px;
 	text-align: center;
 	margin: 50px auto 10px auto;
-	}	
+	}
 
-#social-links {
+#socialContainer {}	
+
+#social-links-1 {
 	width: 40px;
-	height: 390px;
+	height: 190px;
 	position: fixed;
 	transition: 0.35s;
 	top: 90px;
@@ -181,11 +184,25 @@ body a {
 	margin: 0;
 	}
 
-#social-links a {
+#social-links-2 {
+	width: 40px;
+	height: 190px;
+	position: fixed;
+	transition: 0.35s;
+	top: 285px;
+	left: 35px;
+	list-style: none;
+	padding: 0;
+	margin: 5px 0 0 0;
+	}
+
+#social-links-1 a,
+#social-links-2 a {
 	display: contents;
 	}
 
-#social-links li {
+#social-links-1 li,
+#social-links-2 li {
 	display: contents;
 	}
 
@@ -233,6 +250,7 @@ body a {
 #soundcloud {
 	background: url(assets/soundcloud.svg) center no-repeat #212120;
 	background-size: contain;
+	margin-top: 0;
 	}
 
 #bandcamp {
@@ -293,6 +311,7 @@ body a {
 	background: #D9974B;
 	padding: 15px;
 	border: 1px solid #D9974B;
+	cursor: pointer;
 	}
 
 #langContainer {
@@ -313,8 +332,7 @@ body a {
 	opacity: 0;
 	}
 
-#ruLangRu,
-#enLangEn {
+#langSelect {
 	width: 50px;
 	height: 50px;
 	text-align: center;
@@ -338,16 +356,13 @@ body a {
 	font-style: normal;
 	}
 
-#ruLangRu:hover,
-#ruLangEn:hover,
-#enLangRu:hover,
-#enLangEn:hover {
+#langSelect:hover,
+#secondLang:hover {
 	border: 1px solid #D9974B;
 	color: #D9974B;
 	}
 
-#ruLangEn,
-#enLangRu {
+#secondLang {
 	width: 50px;
 	height: 50px;
 	text-align: center;
@@ -491,10 +506,10 @@ body a {
 	}
 
 .linkContainer {
-	border: 1px solid #5D5D5D;
+	border: 1px solid rgb(125 125 125 / 50%);
 	border-radius: 50%;
 	position: fixed;
-	z-index: 990;
+	z-index: 800;
 	transition: 0.35s;
 	padding: 3px;
 	animation: 1.5s linear 0s 1 scaleLink;
@@ -502,6 +517,7 @@ body a {
 
 .linkContainer:hover {
 	transform: scale(1.25);
+	border: 1px solid rgb(125 125 125 / 0%);
 	}
 
 .menuLink {
@@ -529,6 +545,7 @@ body a {
 
 .menuTitle a {
 	color: #D9974B;
+	text-shadow: 0px 2px #212121;
 	}
 
 .linkContainer:hover .menuTitle {
@@ -593,7 +610,7 @@ body a {
 	height: 100px;
 	position: fixed;
 	bottom: 0;
-	z-index: 1;
+	z-index: 90;
 	}
 
 #merch {
