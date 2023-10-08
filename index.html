@@ -24,21 +24,15 @@
 
 <body>
 
-<div id="topNav">
-
-<div id="open-menu" class="scale" onclick="openNav()">&#9776;</div>
-
-<h1 id="titleTop" class="title fadeIn">XXXXXXXXXXXX XXXXXX XXXX-XXXXX</h1>
-
 <div id="langSelect" class="scale" onclick="selectLang()">RU</div>
 
 <div id="langContainer"><a href="#" target="_self"><div id="secondLang">EN</div></a></div>
 
-</div>
+<div id="topNav"><h1 id="titleTop" class="title fadeIn">XXXXXXXXXXXX XXXXXX XXXX-XXXXX</h1></div>
 
 <div id="sidenav" class="sidenav">
 
-<div id="close-menu" onclick="closeNav()">&times;</div>
+<div id="open-menu" class="scale" onclick="openNav()"><div id="burger"></div></div>
 
 <div id="nav-links">
 
@@ -74,7 +68,7 @@
 
 <div id="socialContainer">
 
-<ul id="social-links-1">
+<ul id="social-links">
 
 <li><a href="#"><div id="facebook" class="social-link scale"></div></a>
 
@@ -83,10 +77,6 @@
 <li><a href="#"><div id="youtube" class="social-link scale"></div></a>
 
 <li><a href="#"><div id="instagram" class="social-link scale"></div></a>
-
-</ul>
-
-<ul id="social-links-2">
 
 <li><a href="#"><div id="soundcloud" class="social-link scale"></div></a>
 
@@ -102,15 +92,7 @@
 
 </div>
 
-<div id="main">
-
-<video src="assets/main-bg.mp4" playsinline autoplay muted loop id="main-bg" class="fadeIn"></video>
-
-<div id="ring-1" class="ring"></div>
-
-<div id="ring-2" class="ring"></div>
-
-<div id="ring-3" class="ring"></div>
+<div id="overlay" onclick="closeNav()"></div>
 
 <div id="menu">
 
@@ -156,13 +138,23 @@
 
 </div>
 
+<div id="main">
+
+<video src="assets/main-bg.mp4" playsinline autoplay muted loop id="main-bg" class="fadeIn"></video>
+
+<div id="ring-1" class="ring"></div>
+
+<div id="ring-2" class="ring"></div>
+
+<div id="ring-3" class="ring"></div>
+
 </div>
 
+<div id="merchContainer"><a href="#"><div id="merch" class="scale"></div></a></div>
+
+<div id="nutsContainer"><div id="nuts" class="scale"><div id="squirrel"></div></div></div>
+
 <div id="footer">
-
-<a href="#"><div id="merch" class="scale"></div></a>
-
-<a href="#"><div id="nuts" class="scale"></div></a>
 
 <h1 id="titleFooter" class="title fadeIn">XXXXXXXXX</h1>
 
