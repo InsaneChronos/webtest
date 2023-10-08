@@ -1,6 +1,6 @@
 document.getElementById("nuts").addEventListener("mouseover", function() {
 	document.getElementById("squirrel").style.display = "block";
-	document.getElementById("squirrel").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/squirrel.png) left center no-repeat";
+	document.getElementById("squirrel").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/squirrel.png) left center no-repeat";
 	document.getElementById("squirrel").style.backgroundSize = "cover";
 	document.getElementById("squirrel").style.animation = "squirrel 6s steps(39) infinite";
 	}
@@ -21,7 +21,7 @@ function openNav() {
 	document.getElementById("sidenav").style.marginLeft = "0px";
 	document.getElementById("open-menu").style.transform = "rotate(-90deg)";
 	document.getElementById("social-links").style.marginLeft = "220px";
-	document.getElementById("burger").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/burger-3.svg) center no-repeat";
+	document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-3.svg) center no-repeat";
 	document.getElementById("burger").style.backgroundSize = "cover";
 	document.getElementById("overlay").style.visibility = "visible";
 	document.getElementById("overlay").style.opacity = ".35";
@@ -29,13 +29,13 @@ function openNav() {
 	document.getElementById("nutsContainer").style.zIndex = "995";
 
 	document.getElementById("burger").addEventListener("mouseover", function() {
-		document.getElementById("burger").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/burger-3.svg) center no-repeat";
+		document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-3.svg) center no-repeat";
 		document.getElementById("burger").style.backgroundSize = "cover";
 		}
 		);
 
 	document.getElementById("burger").addEventListener("mouseout", function() {
-		document.getElementById("burger").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/burger-1.svg) center no-repeat";
+		document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-1.svg) center no-repeat";
 		document.getElementById("burger").style.backgroundSize = "cover";
 		}
 		);
@@ -51,11 +51,11 @@ function openNav() {
 		document.getElementById("merchContainer").style.zIndex = "999";
 		document.getElementById("nutsContainer").style.zIndex = "999";
 
-		document.getElementById("burger").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/burger-2.svg) center no-repeat";
+		document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-2.svg) center no-repeat";
 		document.getElementById("burger").style.backgroundSize = "cover";
 
 		document.getElementById("burger").addEventListener("mouseover", function() {
-			document.getElementById("burger").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/burger-2.svg) center no-repeat";
+			document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-2.svg) center no-repeat";
 			document.getElementById("burger").style.backgroundSize = "cover";
 			}
 			);
@@ -74,11 +74,11 @@ function closeNav() {
 	document.getElementById("merchContainer").style.zIndex = "999";
 	document.getElementById("nutsContainer").style.zIndex = "999";
 	
-	document.getElementById("burger").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/burger-1.svg) center no-repeat";
+	document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-1.svg) center no-repeat";
 	document.getElementById("burger").style.backgroundSize = "cover";
 
 	document.getElementById("burger").addEventListener("mouseover", function() {
-		document.getElementById("burger").style.background = "url(file:///C:/Users/InsaneChronos/Desktop/sventoyar/assets/burger-2.svg) center no-repeat";
+		document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-2.svg) center no-repeat";
 		document.getElementById("burger").style.backgroundSize = "cover";
 		}
 		);
