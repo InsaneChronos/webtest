@@ -1,7 +1,7 @@
 document.getElementById("nuts").addEventListener("mouseover", function() {
 	document.getElementById("squirrel").style.display = "block";
 	document.getElementById("squirrel").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/squirrel.png) left center no-repeat";
-	document.getElementById("squirrel").style.backgroundSize = "cover";
+	document.getElementById("squirrel").style.backgroundSize = "auto";
 	document.getElementById("squirrel").style.animation = "squirrel 6s steps(39) infinite";
 	}
 	);
