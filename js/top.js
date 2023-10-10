@@ -1,3 +1,6 @@
+var navMargin = document.getElementById("sidenav");
+var actualMargin = getComputedStyle(navMargin).marginLeft;
+
 document.getElementById("nuts").addEventListener("mouseover", function() {
 	document.getElementById("squirrel").style.display = "block";
 	document.getElementById("squirrel").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/squirrel.png) left center no-repeat";
@@ -35,7 +38,7 @@ function openNav() {
 		);
 
 	document.getElementById("burger").addEventListener("mouseout", function() {
-		document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-1.svg) center no-repeat";
+		document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-3.svg) center no-repeat";
 		document.getElementById("burger").style.backgroundSize = "cover";
 		}
 		);
@@ -59,11 +62,19 @@ function openNav() {
 			document.getElementById("burger").style.backgroundSize = "cover";
 			}
 			);
+
+		document.getElementById("burger").addEventListener("mouseout", function() {
+			document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-1.svg) center no-repeat";
+			document.getElementById("burger").style.backgroundSize = "cover";
+			}
+			);
+
 		}
 
 	}
 
 function closeNav() {
+
 	document.body.style.overflow = "initial";
 	document.getElementById("sidenav").style.marginLeft = "-220px";
 	document.getElementById("open-menu").style.transform = "rotate(0deg)";
@@ -82,6 +93,15 @@ function closeNav() {
 		document.getElementById("burger").style.backgroundSize = "cover";
 		}
 		);
+
+	if (actualMargin == "-220px") {
+		document.getElementById("burger").addEventListener("mouseout", function() {
+			document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-1.svg) center no-repeat";
+			document.getElementById("burger").style.backgroundSize = "cover";
+			}
+			);
+
+		}
 
 	}
 
