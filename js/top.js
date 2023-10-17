@@ -1,3 +1,5 @@
+/* ------------------------- DESKTOP VERSION ------------------------- */
+
 var navMargin = document.getElementById("sidenav");
 var actualMargin = getComputedStyle(navMargin).marginLeft;
 
@@ -121,7 +123,23 @@ function selectLang() {
 
 	}
 
+/* ------------------------- MOBILE VERSION ------------------------- */
+
 if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
+
+	document.getElementById("nuts").addEventListener("mouseover", function() {
+		document.getElementById("squirrel").style.display = "block";
+		document.getElementById("squirrel").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/squirrel-m.png) left center no-repeat";
+		document.getElementById("squirrel").style.backgroundSize = "auto";
+		document.getElementById("squirrel").style.animation = "squirrel-m 6s steps(39) infinite";
+		}
+		);
+
+	document.getElementById("nuts").addEventListener("mouseout", function() {
+		document.getElementById("squirrel").style.display = "none";
+		document.getElementById("squirrel").style.background = "none";
+		}
+		);
 
 	function openNav() {
 
@@ -144,6 +162,7 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	}
 
 	document.getElementById("nav-links").style.textAlign = "center";
+	document.getElementById("nav-links").style.paddingTop = "35px";
 	document.getElementById("social-links").style.width = "250px";
 	document.getElementById("social-links").style.height = "100%";
 	document.getElementById("social-links").style.position = "relative";
@@ -166,8 +185,18 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("videoContainer").style.display = "none";
 	document.getElementById("photoContainer").style.display = "none";
 	document.getElementById("footer").style.background = "#212120";
-	document.getElementById("footer").style.zIndex = "900";
 	document.getElementById("titleFooter").style.margin = "46px auto 0 auto";
+	document.getElementById("merchContainer").style.width = "76px";
+	document.getElementById("merchContainer").style.margin = "5px auto";
+	document.getElementById("merchContainer").style.zIndex = "998";
+	document.getElementById("merch").style.width = "76px";
+	document.getElementById("nutsContainer").style.width = "95px";
+	document.getElementById("nutsContainer").style.height = "165px";
+	document.getElementById("nutsContainer").style.zIndex = "998";
+	document.getElementById("nuts").style.width = "95px";
+	document.getElementById("nuts").style.height = "165px";
+	document.getElementById("squirrel").style.width = "95px";
+	document.getElementById("squirrel").style.height = "165px";
 
     var social = document.getElementsByClassName("social-link");
     var count;
