@@ -19,6 +19,14 @@ body a {
 	transition: .35s;
 	}
 
+#bgOverlay {
+	width: 100%;
+	height: 100%;
+	background: none;
+	position: fixed;
+	z-index: 982;
+	}
+
 #main {
 	width: 100%;
 	height: 100%;
@@ -167,7 +175,7 @@ body a {
 	margin: 50px auto 10px auto;
 	}
 
-#socialContainer {}	
+#socialContainer {}
 
 #social-links {
 	width: 40px;
