@@ -121,7 +121,7 @@ function selectLang() {
 
 	}
 
-if (window.innerHeight > window.innerWidth){
+if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 
 	function openNav() {
 
@@ -132,26 +132,26 @@ if (window.innerHeight > window.innerWidth){
 		document.getElementById("sidenav").style.width = "100%";
 		document.getElementById("open-menu").style.transform = "rotate(-90deg)";
 		document.getElementById("open-menu").style.transition = "all .25s ease-in";
-		document.getElementById("social-links").style.marginLeft = "220px";
+		document.getElementById("social-links").style.flexDirection = "row";
+		document.getElementById("social-links").style.flexWrap = "wrap";
 
 		if (actualMargin == "0px") {
-			navMargin.style.marginLeft = "-220px";
+			navMargin.style.marginLeft = "-100%";
 			document.getElementById("open-menu").style.transform = "rotate(0deg)";
 			document.getElementById("social-links").style.marginLeft = "0px";
-			document.getElementById("sidenav").style.width = "calc(100% - 220px)";
 			}
 
 	}
 
-	document.getElementById("social-links").style.width = "100%";
+	document.getElementById("nav-links").style.textAlign = "center";
+	document.getElementById("social-links").style.width = "250px";
 	document.getElementById("social-links").style.height = "100%";
 	document.getElementById("social-links").style.position = "relative";
 	document.getElementById("social-links").style.display = "flex";
 	document.getElementById("social-links").style.alignItems = "baseline";
 	document.getElementById("social-links").style.justifyContent = "center";
 	document.getElementById("social-links").style.alignContent = "flex-end";
-	document.getElementById("social-links").style.top = "0px";
-	document.getElementById("social-links").style.left = "0px";
+	document.getElementById("social-links").style.left = "calc(50% - 125px)";
 	document.getElementById("social-links").style.transition = "0s";
 	document.getElementById("socialContainer").style.marginBottom = "30px";
 	document.getElementById("open-menu").style.display = "flex";
@@ -168,9 +168,6 @@ if (window.innerHeight > window.innerWidth){
 	document.getElementById("footer").style.background = "#212120";
 	document.getElementById("footer").style.zIndex = "900";
 	document.getElementById("titleFooter").style.margin = "46px auto 0 auto";
-/* 	document.getElementById("langSelect").style.left = "calc(100% - 70px)"; */
-/* 	document.getElementById("secondLang").style.left = "calc(100% - 70px)"; */
-/* 	document.getElementById("langContainer").style.left = "calc(100% - 94.85px)"; */
 
     var social = document.getElementsByClassName("social-link");
     var count;
