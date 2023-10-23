@@ -146,6 +146,8 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 		var navMargin = document.getElementById("sidenav");
 		var actualMargin = getComputedStyle(navMargin).marginLeft;
 
+		document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-3.svg) center no-repeat";
+		document.getElementById("burger").style.backgroundSize = "cover";
 		document.getElementById("sidenav").style.marginLeft = "0px";
 		document.getElementById("sidenav").style.width = "100%";
 		document.getElementById("open-menu").style.transform = "rotate(-90deg)";
@@ -155,6 +157,8 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 
 		if (actualMargin == "0px") {
 			navMargin.style.marginLeft = "-100%";
+			document.getElementById("burger").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/burger-1.svg) center no-repeat";
+			document.getElementById("burger").style.backgroundSize = "cover";
 			document.getElementById("open-menu").style.transform = "rotate(0deg)";
 			document.getElementById("social-links").style.marginLeft = "0px";
 			}
@@ -175,6 +179,8 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("socialContainer").style.marginBottom = "30px";
 	document.getElementById("open-menu").style.display = "flex";
 	document.getElementById("open-menu").style.left = "15px";
+	document.getElementById("langSelect").style.right = "15px";
+	document.getElementById("langContainer").style.right = "-8px";
 	document.getElementById("ring-1").style.display = "none";
 	document.getElementById("ring-2").style.display = "none";
 	document.getElementById("ring-3").style.display = "none";
@@ -186,17 +192,19 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("photoContainer").style.display = "none";
 	document.getElementById("footer").style.background = "#212120";
 	document.getElementById("titleFooter").style.margin = "46px auto 0 auto";
-	document.getElementById("merchContainer").style.width = "76px";
+	document.getElementById("merchContainer").style.width = "60px";
 	document.getElementById("merchContainer").style.margin = "5px auto";
+	document.getElementById("merchContainer").style.left = "15px";
 	document.getElementById("merchContainer").style.zIndex = "998";
-	document.getElementById("merch").style.width = "76px";
-	document.getElementById("nutsContainer").style.width = "95px";
-	document.getElementById("nutsContainer").style.height = "165px";
+	document.getElementById("merch").style.width = "60px";
+	document.getElementById("nutsContainer").style.width = "75px";
+	document.getElementById("nutsContainer").style.height = "130px";
+	document.getElementById("nutsContainer").style.bottom = "7.5px";
 	document.getElementById("nutsContainer").style.zIndex = "998";
-	document.getElementById("nuts").style.width = "95px";
-	document.getElementById("nuts").style.height = "165px";
-	document.getElementById("squirrel").style.width = "95px";
-	document.getElementById("squirrel").style.height = "165px";
+	document.getElementById("nuts").style.width = "75px";
+	document.getElementById("nuts").style.height = "130px";
+	document.getElementById("squirrel").style.width = "75px";
+	document.getElementById("squirrel").style.height = "130px";
 
     var social = document.getElementsByClassName("social-link");
     var count;
