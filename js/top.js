@@ -191,7 +191,11 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("videoContainer").style.display = "none";
 	document.getElementById("photoContainer").style.display = "none";
 	document.getElementById("footer").style.background = "#212120";
-	document.getElementById("titleFooter").style.margin = "46px auto 0 auto";
+	document.getElementById("titleTop").style.top = "70%";
+	document.getElementById("titleTop").style.color = "#9D9D9D";
+	document.getElementById("titleFooter").style.bottom = "75%";
+	document.getElementById("titleFooter").style.fontSize = "25px";
+	document.getElementById("titleFooter").style.color = "#9D9D9D";
 	document.getElementById("merchContainer").style.width = "60px";
 	document.getElementById("merchContainer").style.margin = "5px auto";
 	document.getElementById("merchContainer").style.left = "15px";
