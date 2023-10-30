@@ -178,7 +178,7 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("social-links").style.transition = "0s";
 	document.getElementById("social-links-m").style.display = "flex";
 	document.getElementById("social-links-m").style.zIndex = "992";
-	document.getElementById("social-links-m").style.top = "77.5%";
+	document.getElementById("social-links-m").style.top = "80%";
 	document.getElementById("socialContainer").style.marginBottom = "30px";
 	document.getElementById("open-menu").style.display = "flex";
 	document.getElementById("open-menu").style.left = "15px";
