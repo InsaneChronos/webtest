@@ -176,6 +176,9 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("social-links").style.alignContent = "flex-end";
 	document.getElementById("social-links").style.left = "calc(50% - 125px)";
 	document.getElementById("social-links").style.transition = "0s";
+	document.getElementById("social-links-m").style.display = "flex";
+	document.getElementById("social-links-m").style.zIndex = "992";
+	document.getElementById("social-links-m").style.top = "75%";
 	document.getElementById("socialContainer").style.marginBottom = "30px";
 	document.getElementById("open-menu").style.display = "flex";
 	document.getElementById("open-menu").style.left = "15px";
@@ -194,7 +197,7 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("titleTop").style.top = "70%";
 	document.getElementById("titleTop").style.color = "#9D9D9D";
 	document.getElementById("titleFooter").style.bottom = "75%";
-	document.getElementById("titleFooter").style.fontSize = "25px";
+	document.getElementById("titleFooter").style.fontSize = "20px";
 	document.getElementById("titleFooter").style.color = "#9D9D9D";
 	document.getElementById("merchContainer").style.width = "60px";
 	document.getElementById("merchContainer").style.margin = "5px auto";
