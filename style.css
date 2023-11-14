@@ -7,12 +7,17 @@ body a {
 	text-decoration: none;
 	}
 
+input:focus-visible {
+	outline: 0;
+	}
+
 #overlay {
 	width: 100%;
 	height: 100%;
 	background: #000000;
 	opacity: 0;
 	position: fixed;
+	top: 0;
 	z-index: 996;
 	display: block;
 	visibility: hidden;
@@ -46,12 +51,33 @@ body a {
 	z-index: -999;
 	}
 
+#content {
+	width: 60%;
+	margin: 75px auto;
+	color: #9D9D9D;
+	font-family: "Magistral";
+	font-weight: lighter;
+	letter-spacing: 1px;
+	position: relative;
+	line-height: 25px;
+	font-size: 15px;
+	}
+
 #topNav {
 	width: 100%;
 	height: 100px;
 	position: fixed;
 	top: 0;
 	z-index: 985;
+	}
+
+#topPage {
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	z-index: 985;
+	background: #212121;
 	}
 
 #sidenav {
@@ -68,7 +94,7 @@ body a {
 	letter-spacing: 10px;
 	text-align: center;
 	color: #7D7D7D;
-	position: absolute;
+	position: fixed;
 	z-index: 986;
 	margin: 0;
 	left: 10%;
@@ -303,6 +329,11 @@ body a {
 	background: transparent;
 	color: #7D7D7D;
 	text-align: center;
+	text-transform: uppercase;
+	font-family: "Magistral";
+	font-weight: bold;
+	font-style: normal;
+	letter-spacing: 2px;
 	}
 
 .subscribe {
@@ -360,6 +391,7 @@ body a {
 	border: 1px solid #7D7D7D;
 	border-radius: 50%;
 	color: #7D7D7D;
+	background: #212121;
 	top: 30px;
 	right: 30px;
 	font-size: 15px;
@@ -388,6 +420,7 @@ body a {
 	border: 1px solid #7D7D7D;
 	border-radius: 50%;
 	color: #7D7D7D;
+	background: #212121;
 	right: 30px;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -628,6 +661,15 @@ body a {
 	position: fixed;
 	bottom: 0;
 	z-index: 985;
+	}
+
+#footerPage {
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	bottom: 0;
+	z-index: 985;
+	background: #212121;
 	}
 
 #merch {
