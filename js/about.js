@@ -185,8 +185,9 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("titleTop").style.top = "6.5%";
 	document.getElementById("titleTop").style.color = "#9D9D9D";
 	document.getElementById("content").style.width = "80%";
-	document.getElementById("content").style.margin = "40px auto";
-	document.getElementById("ink").style.margin = "0px auto 90px auto";
+	document.getElementById("content").style.height = "calc(100% - 200px)";
+	document.getElementById("content").style.top = "110px";
+	document.getElementById("ink").style.margin = "0px auto 25px auto";
 	document.getElementById("footerPage").style.height = "100px";
 	document.getElementById("titleFooter").style.bottom = "6.5%";
 	document.getElementById("titleFooter").style.fontSize = "10px";
