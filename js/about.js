@@ -1,7 +1,7 @@
 /* ------------------------- DESKTOP VERSION ------------------------- */
 
-currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]')
-currentLinks.forEach(link => link.className += ' current-link');
+currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
+currentLinks.forEach(link => link.className += 'current-link');
 
 var navMargin = document.getElementById("sidenav");
 var actualMargin = getComputedStyle(navMargin).marginLeft;
