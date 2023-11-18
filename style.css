@@ -21,7 +21,8 @@ body p:last-child {
 	margin: 0;
 	}
 
-input:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
 	outline: 0;
 	}
 
@@ -75,10 +76,20 @@ input:focus-visible {
 	font-weight: lighter;
 	letter-spacing: 1px;
 	position: relative;
-	top: 75px;
+	top: 70px;
 	line-height: 25px;
 	font-size: 15px;
 	overflow-y: auto;
+	}
+
+#content h2 {
+	font-size: 14px;
+	color: #7D7D7D;
+	font-family: "Magistral";
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	margin: 0px auto 35px auto;
 	}
 
 #topNav {
@@ -296,6 +307,55 @@ input:focus-visible {
 	margin: 0 5px;
 	}
 
+#social-links-c {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+	}
+
+#social-links-c ul {
+	width: 660px;
+	display: flex;
+	transition: .35s;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	z-index: 970;
+	}
+
+#social-links-c li {
+	margin: 10px 25px;
+	border: 1px solid #7D7D7D;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	}
+
+#social-links-c li:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+	}
+
+#social-links-c a {
+	display: contents;
+	}
+
+#social-links-c div {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+#social-links-c img {
+	max-width: 30px;
+	max-height: 20px;
+	}
+
 #social-links a {
 	display: contents;
 	}
@@ -324,42 +384,42 @@ input:focus-visible {
 	}
 
 #facebook {
-	background: url(assets/facebook.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/facebook.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
 #vk {
-	background: url(assets/vk.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/vk.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
 #youtube {
-	background: url(assets/youtube.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/youtube.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
 #instagram {
-	background: url(assets/instagram.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/instagram.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
 #soundcloud {
-	background: url(assets/soundcloud.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/soundcloud.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
 #bandcamp {
-	background: url(assets/bandcamp.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/bandcamp.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
 #itunes {
-	background: url(assets/itunes.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/itunes.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
 #googleplay {
-	background: url(assets/googleplay.svg) center no-repeat #212120;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/googleplay.svg) center no-repeat #212120;
 	background-size: contain;
 	}
 
@@ -411,6 +471,46 @@ input:focus-visible {
 	padding: 15px;
 	border: 1px solid #D9974B;
 	cursor: pointer;
+	}
+
+#contactName,
+#contactMail {
+	width: calc(48% - 20px);
+	background: transparent;
+	color: #7D7D7D;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #7D7D7D;
+	font-family: "Magistral";
+	font-weight: bold;
+	font-style: normal;
+	background: transparent;
+	letter-spacing: 2px;
+	}
+
+#contactName {
+	float: left;
+	}
+
+#contactMail {
+	float: right;
+	}
+
+#contactMSG {
+	width: 95.4%;
+	height: 150px;
+	background: transparent;
+	color: #7D7D7D;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #7D7D7D;
+	font-family: "Magistral";
+	font-weight: 100;
+	font-style: normal;
+	background: transparent;
+	letter-spacing: 2px;
 	}
 
 #langContainer {
