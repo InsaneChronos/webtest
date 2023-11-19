@@ -190,6 +190,14 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("content").style.width = "80%";
 	document.getElementById("content").style.height = "calc(100% - 200px)";
 	document.getElementById("content").style.top = "100px";
+	document.getElementById("content").style.textAlign = "center";
+	document.getElementById("social-links-c").style.width = "280px";
+	document.getElementById("social-links-c").style.margin = "auto";
+	document.getElementById("contactName").style.float = "none";
+	document.getElementById("contactMail").style.float = "none";
+	document.getElementById("contactName").style.width = "90%";
+	document.getElementById("contactMail").style.width = "90%";
+	document.getElementById("contactMSG").style.width = "90%";
 	document.getElementById("footerPage").style.height = "100px";
 	document.getElementById("titleFooter").style.bottom = "6.5%";
 	document.getElementById("titleFooter").style.fontSize = "10px";
@@ -215,5 +223,8 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 		social[count].style.width = "50px";
 		social[count].style.height = "50px";
 		}
+
+	let elements = document.querySelectorAll("li");
+	for (let li of elements) {li.style.margin = "5px";}
 
 	}
