@@ -11,6 +11,16 @@ $(document).ready(function(){$(".post").slice(0, 4).show();
 	$(".post:hidden").slice(0, 4).slideDown();
 	if($(".post:hidden").length == 0) {$("#more").text("БОЛЬШЕ НОВОСТЕЙ НЕТ").addClass("end");}});})
 
+let toTop = document.getElementById("toTop");
+
+document.getElementById("content").onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if (document.getElementById("content").scrollTop > 400 && window.innerHeight < window.innerWidth)
+	{toTop.style.display = "flex";} else {toTop.style.display = "none";}}
+
+function topFunction() {document.getElementById("content").scrollTop = 0; document.documentElement.scrollTop = 0;}
+
 document.getElementById("nuts").addEventListener("mouseover", function() {
 	document.getElementById("squirrel").style.display = "block";
 	document.getElementById("squirrel").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/squirrel.png) left center no-repeat";
