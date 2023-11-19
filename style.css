@@ -183,11 +183,11 @@ textarea:focus-visible {
 	}
 
 .sidenav a:hover {
-	color: #fff;
+	color: #FFFFFF;
 	}
 
 .current-link {
-	color:#fff !important;
+	color: #FFFFFF !important;
 	}
 
 #sidenav::-webkit-scrollbar {
@@ -890,4 +890,92 @@ textarea:focus-visible {
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/ink.svg) center no-repeat;
 	background-size: contain;
 	margin: 0 auto 50px auto;
+	}
+
+.news {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	}
+
+.post {
+	width: calc(50% - 10px);
+	height: 250px;
+	color: #7D7D7D;
+	font-size: 14px;
+	text-align: center;
+	margin: 4px;
+	display: none;
+	}
+
+#postImage {
+	width: calc(100% - 2px);
+	height: 170px;
+	line-height: 170px;
+	background: #0D0D0D;
+	opacity: .75;
+	border: 1px solid #7D7D7D;
+	margin-bottom: 10px;
+	}
+
+#postImage img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	}
+
+#postTitle {
+	width: 90%;
+	height: 40px;
+	text-align: left;
+	margin: auto;
+	line-height: 15px;
+	}
+
+#postDate {
+	width: 90%;
+	height: 30px;
+	text-align: right;
+	margin: auto;
+	line-height: 15px;
+	}
+
+.post:hover > #postImage {
+	opacity: 1;
+	border: 1px solid #D9974B;
+	}
+
+.post:hover > #postTitle {
+	color: #D9974B;
+	}
+
+.post:hover > #postDate {
+	color: #D9974B;
+	}
+
+#more {
+	width: 95%;
+	color: #7D7D7D;
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	padding: 10px;
+	border: 1px solid #7D7D7D;
+	background: transparent;
+	}
+
+#more:hover {
+	color: #FFFFFF;
+	background: #D9974B;
+	border: 1px solid #D9974B;
+	text-decoration: none;
+	}
+
+.end {
+	color: #7D7D7D !important;
+	background: transparent !important;
+	border: none !important;
+	pointer-events: none;
+	font-size: 10px;
 	}
