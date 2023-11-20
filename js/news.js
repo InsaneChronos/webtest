@@ -19,7 +19,8 @@ document.getElementById("content").onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (document.getElementById("content").scrollTop > 400 && window.innerHeight < window.innerWidth)
-	{toTop.style.opacity = "1"; toTop.style.visibility = "visible";} else {toTop.style.opacity = "0";}}
+	{toTop.style.opacity = "1"; toTop.style.visibility = "visible";}
+	else {toTop.style.opacity = "0"; toTop.style.visibility = "hidden";}}
 
 function topFunction() {document.getElementById("content").scrollTop = 0; document.documentElement.scrollTop = 0;}
 
