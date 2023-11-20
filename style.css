@@ -609,7 +609,7 @@ textarea:focus-visible {
 	transform: rotate(45deg);
 	display: block;
 	animation: circle .5s 1 linear;
-	border-image: url(assets/circle-inner.svg) 50 50;
+	border-image: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/circle-inner.svg) 50 50;
 	}
 
 .circular::before {
@@ -621,7 +621,7 @@ textarea:focus-visible {
 	animation: circular 2s infinite linear;
 	animation-delay: .5s;
 	opacity: 0;
-	border-image: url(assets/circle-outer.svg) 50 50;
+	border-image: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/circle-outer.svg) 50 50;
 	}
 
 @keyframes circle {
@@ -682,7 +682,7 @@ textarea:focus-visible {
 	width: 164px;
 	height: 164px;
 	border-radius: 50%;
-	background: url(assets/logo.svg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/logo.svg) center no-repeat;
 	background-size: contain;
 	position: absolute;
 	}
@@ -762,7 +762,7 @@ textarea:focus-visible {
 	}
 
 #news {
-	background: url(assets/news.svg) center no-repeat #7D7D7D;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/news.svg) center no-repeat #7D7D7D;
 	}
 
 #contactsContainer {
@@ -771,7 +771,7 @@ textarea:focus-visible {
 	}
 
 #contacts {
-	background: url(assets/contacts.svg) center no-repeat #7D7D7D;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/contacts.svg) center no-repeat #7D7D7D;
 	}
 
 #musicContainer {
@@ -780,7 +780,7 @@ textarea:focus-visible {
 	}
 
 #music {
-	background: url(assets/music.svg) center no-repeat #7D7D7D;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/music.svg) center no-repeat #7D7D7D;
 	}
 
 #textsContainer {
@@ -789,7 +789,7 @@ textarea:focus-visible {
 	}
 
 #texts {
-	background: url(assets/texts.svg) center no-repeat #7D7D7D;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/texts.svg) center no-repeat #7D7D7D;
 	}
 
 #videoContainer {
@@ -798,7 +798,7 @@ textarea:focus-visible {
 	}
 
 #video {
-	background: url(assets/video.svg) center no-repeat #7D7D7D;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/video.svg) center no-repeat #7D7D7D;
 	}
 
 #photoContainer {
@@ -806,7 +806,7 @@ textarea:focus-visible {
 	}
 
 #photo {
-	background: url(assets/photo.svg) center no-repeat #7D7D7D;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/photo.svg) center no-repeat #7D7D7D;
 	}
 
 #footer {
@@ -829,7 +829,7 @@ textarea:focus-visible {
 #merch {
 	width: 108px;
 	height: 90px;
-	background: url(assets/merch.svg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/merch.svg) center no-repeat;
 	background-size: contain;
 	}
 
@@ -857,7 +857,7 @@ textarea:focus-visible {
 #nuts {
 	width: 135px;
 	height: 235px;
-	background: url(assets/nuts.svg) center bottom no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/nuts.svg) center bottom no-repeat;
 	background-size: cover;
 	}
 
@@ -981,12 +981,12 @@ textarea:focus-visible {
 	}
 
 #toTop {
-	display: none;
+	visibility: hidden;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 50px;
 	height: 50px;
-	border: 1px solid #7D7D7D;
 	border-radius: 50%;
 	background: transparent;
 	position: fixed;
@@ -994,16 +994,22 @@ textarea:focus-visible {
 	bottom: 45px;
 	z-index: 990;
 	cursor: pointer;
-	}
-
-#toTop:hover {
-	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+	opacity: 0;
+	transition: .35s;
+	padding: 0;
+	border: none;
 	}
 
 #topButton {
 	transform: rotate(180deg);
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-2.svg) center no-repeat;
 	background-size: contain;
+	border: 1px solid #7D7D7D;
+	border-radius: 50%;
+	}
+
+#topButton:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
 	}
