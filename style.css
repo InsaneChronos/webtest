@@ -452,7 +452,7 @@ textarea:focus-visible {
 
 .subscribe {
 	width: 100%;
-	color: #fff;
+	color: #7D7D7D;
 	font-size: 10px;
 	text-transform: uppercase;
 	font-family: "Magistral";
@@ -477,14 +477,13 @@ textarea:focus-visible {
 #contactMail {
 	width: calc(48% - 20px);
 	background: transparent;
-	color: #7D7D7D;
+	color: #FFFFFF;
 	text-align: center;
-	text-transform: uppercase;
 	padding: 15px;
 	margin-bottom: 15px;
 	border: 1px solid #7D7D7D;
 	font-family: "Magistral";
-	font-weight: bold;
+	font-weight: 100;
 	font-style: normal;
 	background: transparent;
 	letter-spacing: 2px;
@@ -502,7 +501,7 @@ textarea:focus-visible {
 	width: 95.4%;
 	height: 150px;
 	background: transparent;
-	color: #7D7D7D;
+	color: #FFFFFF;
 	padding: 15px;
 	margin-bottom: 15px;
 	border: 1px solid #7D7D7D;
@@ -511,6 +510,12 @@ textarea:focus-visible {
 	font-style: normal;
 	background: transparent;
 	letter-spacing: 2px;
+	}
+
+#contactName:hover,
+#contactMail:hover,
+#contactMSG:hover {
+	border: 1px solid #D9974B;
 	}
 
 #langContainer {
