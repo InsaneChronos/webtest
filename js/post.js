@@ -128,13 +128,15 @@ function shareSelect() {
 	var shareOpacity = document.getElementById("shareContainer");
 	var actualOpacity = getComputedStyle(shareOpacity).opacity;
 
-	document.getElementById("shareContainer").style.opacity = "1";
-	document.getElementById("shareContainer").style.display = "flex";
+	shareOpacity.style.opacity = "1";
+	shareOpacity.style.visibility = "visible";
+	shareOpacity.style.left = "0px";
 	document.getElementById("shareButton").style.filter = "brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg)";
 
 	if (actualOpacity == "1") {
-		shareOpacity.style.display = "none";
+		shareOpacity.style.visibility = "hidden";
 		shareOpacity.style.opacity = "0";
+		shareOpacity.style.left = "50px";
 		document.getElementById("shareButton").style.filter = "none";
 		}
 
@@ -204,6 +206,8 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("content").style.width = "80%";
 	document.getElementById("content").style.height = "calc(100% - 200px)";
 	document.getElementById("content").style.top = "100px";
+	document.getElementById("shareContainer").style.width = "calc(100% - 40px)";
+	document.getElementById("postCover").style.height = "170px";
 	document.getElementById("footerPage").style.height = "100px";
 	document.getElementById("titleFooter").style.bottom = "6.5%";
 	document.getElementById("titleFooter").style.fontSize = "10px";
