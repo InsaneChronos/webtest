@@ -123,6 +123,23 @@ function selectLang() {
 
 	}
 
+function shareSelect() {
+
+	var shareOpacity = document.getElementById("shareContainer");
+	var actualOpacity = getComputedStyle(shareOpacity).opacity;
+
+	document.getElementById("shareContainer").style.opacity = "1";
+	document.getElementById("shareContainer").style.display = "flex";
+	document.getElementById("shareButton").style.filter = "brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg)";
+
+	if (actualOpacity == "1") {
+		shareOpacity.style.display = "none";
+		shareOpacity.style.opacity = "0";
+		document.getElementById("shareButton").style.filter = "none";
+		}
+
+	}
+
 /* ------------------------- MOBILE VERSION ------------------------- */
 
 if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
