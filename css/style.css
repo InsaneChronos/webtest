@@ -335,10 +335,6 @@ textarea:focus-visible {
 	height: 50px;
 	}
 
-#social-links-c li:hover {
-	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
-	}
-
 #social-links-c a {
 	display: contents;
 	}
@@ -369,18 +365,6 @@ textarea:focus-visible {
 	height: 40px;
 	border-radius: 50px;
 	margin: 5px 0;
-	}
-
-.social-link:hover,
-#logo:hover,
-#merch:hover,
-#news:hover,
-#contacts:hover,
-#music:hover,
-#texts:hover,
-#video:hover,
-#photo:hover {
-	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
 	}
 
 #facebook {
@@ -1015,8 +999,23 @@ textarea:focus-visible {
 	border-radius: 50%;
 	}
 
-#topButton:hover {
-	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+.social-link:hover,
+#logo:hover,
+#merch:hover,
+#news:hover,
+#contacts:hover,
+#music:hover,
+#texts:hover,
+#video:hover,
+#photo:hover,
+#social-links-c li:hover,
+#topButton:hover,
+#shareButton:hover,
+#shareFB:hover,
+#shareGP:hover,
+#shareVK:hover,
+#shareTX:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg) !important;
 	}
 
 #post img {
@@ -1038,7 +1037,79 @@ textarea:focus-visible {
 
 #share {
 	width: 100%;
-	height: 50px;
-	background: #000;
+	height: 40px;
 	margin-bottom: 25px;
+	}
+
+#shareButton {
+	width: 40px;
+	height: 40px;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/share.svg) center no-repeat;
+	background-size: contain;
+	cursor: pointer;
+	float: right;
+	}
+
+#shareContainer {
+	width: 200px;
+	display: none;
+	opacity: 0;
+	float: right;
+	}
+
+#shareTitle {
+	height: 10px;
+	line-height: 10px;
+	}
+
+#shareLinks {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	line-height: 60px;
+	position: relative;
+	top: 20px;
+	left: -100px;
+	}
+
+#shareLinks li {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	}
+
+#shareLinks a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	}
+
+#shareFB {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/facebook-c.svg) center no-repeat;
+	background-size: contain;
+	}
+
+#shareGP {
+	width: 24px !important;
+	height: 24px !important;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/googleplus-c.svg) center no-repeat;
+	background-size: contain;
+	position: relative;
+	top: -2px;
+	}
+
+#shareVK {
+	width: 24px !important;
+	height: 24px !important;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/vk-c.svg) center no-repeat;
+	background-size: contain;
+	position: relative;
+	top: -2px;
+	}
+
+#shareTX {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/twitter-c.svg) center no-repeat;
+	background-size: contain;
 	}
