@@ -1120,3 +1120,179 @@ textarea:focus-visible {
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/twitter-c.svg) center no-repeat;
 	background-size: contain;
 	}
+
+#albumSelect {
+	width: calc(95% - 4px);
+	height: 70px;
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	z-index: 994;
+	cursor: pointer;
+	}
+
+#albumSelect:hover ~ .activeAlbum {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#albumSelect:hover ~ #moreAlbums {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg) !important;
+	}
+
+#albumSelect1,
+#albumSelect2,
+#albumSelect3,
+#albumSelect4 {
+	width: calc(100% - 4px);
+	height: 70px;
+	position: relative;
+	z-index: 990;
+	cursor: pointer;
+	border: 1px solid #2D2D2D;
+	margin-bottom: 4px;
+	}
+
+#albumSelect1:hover,
+#albumSelect2:hover,
+#albumSelect3:hover,
+#albumSelect4:hover {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#albumSelect1:hover #albumCover1 {
+	opacity: 1;
+	}
+
+#albumSelect2:hover #albumCover2 {
+	opacity: 1;
+	}
+
+#albumSelect3:hover #albumCover3 {
+	opacity: 1;
+	}
+
+#albumSelect4:hover #albumCover4 {
+	opacity: 1;
+	}
+
+.album {
+	display: none;
+	}
+	
+.activeAlbum {
+	display: block;
+	}
+
+.play {
+	display: block;
+	}
+
+#album1,
+#album2,
+#album3,
+#album4 {
+	width: 890px;
+	height: 300px;
+	margin: auto;
+	position: absolute;
+	top: 92px;
+	z-index: 980;
+	background: #242424;
+	line-height: 200px;
+	}
+
+#moreAlbums {
+	width: 70px;
+	height: 70px;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-2.svg) center no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 0;
+	right: 30px;
+	z-index: 995;
+	cursor: pointer;
+	}
+
+#moreAlbums:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg) !important;
+	}
+
+#moreAlbums:hover ~ .activeAlbum {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#moreAlbums:hover ~ #albumSelect4 {
+	background: #292929 !important;
+	color: #D9974B;
+	}
+
+#moreAlbums:hover ~ .albumCover {
+	opacity: 1 !important;
+	}
+
+#moreAlbums:hover ~ #albumSelect4 #albumCover4 {
+	opacity: 1 !important;
+	}
+
+.albumCover {
+	width: 68px;
+	height: 68px;
+	float: left;
+	margin-right: 20px;
+	opacity: .25;
+	}
+
+.albumCover:hover {
+	opacity: 1;
+	}
+
+.activeCover {
+	opacity: 1 !important;
+	}
+
+#albumCover1 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/album-cover-1.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumCover2 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/album-cover-2.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumCover3 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/album-cover-3.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumCover4 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/album-cover-4.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#albumTitle {
+	float: left;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+#albumTitle p {
+	margin: 0;
+	font-size: 12px;
+	}
+
+#albumEnTitle {
+	color: #6F6F6F;
+	margin-top: -10px !important;
+	}
+
+/* #albumSelect1:hover #albumEnTitle,
+#albumSelect2:hover #albumEnTitle,
+#albumSelect3:hover #albumEnTitle {
+	color: #D9974B !important;
+	} */
