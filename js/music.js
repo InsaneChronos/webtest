@@ -1,5 +1,8 @@
 /* ------------------------- DESKTOP VERSION ------------------------- */
 
+currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
+currentLinks.forEach(link => link.className += 'current-link');
+
 var navMargin = document.getElementById("sidenav");
 var actualMargin = getComputedStyle(navMargin).marginLeft;
 
@@ -123,10 +126,6 @@ function selectLang() {
 
 	}
 
-/* function hoverOn() {document.getElementById("albumEnTitle").style.setProperty("color", "#D9974B");} */
-
-/* function hoverOff() {document.getElementById("albumEnTitle").style.setProperty("color", "#6F6F6F");} */
-
 function albumSelect() {
 	
 	var albumSelect = document.getElementById("albumSelect");
@@ -139,6 +138,9 @@ function albumSelect() {
 	var albumCover3 = document.getElementById("albumCover3");
 	var albumCover2 = document.getElementById("albumCover2");
 	var albumCover1 = document.getElementById("albumCover1");
+	var albumEnTitle3 = document.getElementById("albumEnTitle3");
+	var albumEnTitle2 = document.getElementById("albumEnTitle2");
+	var albumEnTitle1 = document.getElementById("albumEnTitle1");
 
 	albumSelect.style.zIndex = "0";
 	albumSelect4.style.display = "block";
@@ -163,6 +165,9 @@ function albumSelect() {
 	albumCover2.classList.remove("activeCover");
 	albumCover1.classList.remove("activeCover");
 	moreAlbums.setAttribute("onclick","albumSelect4()");
+	albumEnTitle3.style.setProperty("color", "#6F6F6F");
+	albumEnTitle2.style.setProperty("color", "#6F6F6F");
+	albumEnTitle1.style.setProperty("color", "#6F6F6F");
 
 	}
 
@@ -215,6 +220,7 @@ function albumSelect3() {
 	var album1 = document.getElementById("album1");
 	var moreAlbums = document.getElementById("moreAlbums");
 	var albumCover = document.getElementById("albumCover3");
+	var albumEnTitle3 = document.getElementById("albumEnTitle3");
 
 	albumSelect.style.zIndex = "994";
 	albumSelect4.style.display = "none";
@@ -226,6 +232,8 @@ function albumSelect3() {
 	albumSelect3.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
+	albumEnTitle3.style = ("color: #D9974B !important");
+
 	
 	if (albumSelect3.style.display = "block")
 		{
@@ -251,6 +259,7 @@ function albumSelect2() {
 	var album1 = document.getElementById("album1");
 	var moreAlbums = document.getElementById("moreAlbums");
 	var albumCover = document.getElementById("albumCover2");
+	var albumEnTitle2 = document.getElementById("albumEnTitle2");
 
 	albumSelect.style.zIndex = "994";
 	albumSelect4.style.display = "none";
@@ -262,6 +271,7 @@ function albumSelect2() {
 	albumSelect2.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
+	albumEnTitle2.style = ("color: #D9974B !important");
 	
 	if (albumSelect2.style.display = "block")
 		{
@@ -287,6 +297,7 @@ function albumSelect1() {
 	var album1 = document.getElementById("album1");
 	var moreAlbums = document.getElementById("moreAlbums");
 	var albumCover = document.getElementById("albumCover1");
+	var albumEnTitle1 = document.getElementById("albumEnTitle1");
 
 	albumSelect.style.zIndex = "994";
 	albumSelect4.style.display = "none";
@@ -298,6 +309,7 @@ function albumSelect1() {
 	albumSelect1.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
+	albumEnTitle1.style = ("color: #D9974B !important");
 	
 	if (albumSelect1.style.display = "block")
 		{
