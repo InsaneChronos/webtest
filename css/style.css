@@ -1183,6 +1183,7 @@ textarea:focus-visible {
 	
 .activeAlbum {
 	display: block;
+	color: #D9974B;
 	}
 
 .play {
@@ -1193,14 +1194,13 @@ textarea:focus-visible {
 #album2,
 #album3,
 #album4 {
-	width: 890px;
-	height: 300px;
+	width: calc(95% - 4px);
+	height: 362px;
 	margin: auto;
 	position: absolute;
 	top: 92px;
 	z-index: 980;
-	background: #242424;
-	line-height: 200px;
+	background: #fff;
 	}
 
 #moreAlbums {
@@ -1238,8 +1238,8 @@ textarea:focus-visible {
 	}
 
 .albumCover {
-	width: 68px;
-	height: 68px;
+	width: 70px;
+	height: 70px;
 	float: left;
 	margin-right: 20px;
 	opacity: .25;
@@ -1269,7 +1269,7 @@ textarea:focus-visible {
 	}
 
 #albumCover4 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/album-cover-4.jpg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/ethnix-cover.png) center no-repeat;
 	background-size: contain;
 	}
 
@@ -1286,13 +1286,89 @@ textarea:focus-visible {
 	font-size: 12px;
 	}
 
-#albumEnTitle {
+#albumEnTitle3,
+#albumEnTitle2,
+#albumEnTitle1 {
 	color: #6F6F6F;
 	margin-top: -10px !important;
 	}
 
-/* #albumSelect1:hover #albumEnTitle,
-#albumSelect2:hover #albumEnTitle,
-#albumSelect3:hover #albumEnTitle {
+#albumSelect3:hover #albumTitle #albumEnTitle3,
+#albumSelect2:hover #albumTitle #albumEnTitle2,
+#albumSelect1:hover #albumTitle #albumEnTitle1 {
 	color: #D9974B !important;
-	} */
+	}
+
+#cover4 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/ethnix-cover.png) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#discs {
+	width: 450px;
+	height: 362px;
+	display: flex;
+	justify-content: center;
+	background: #000;
+	float: left;
+	}
+
+#disc4 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/ethnix-cd.png) center no-repeat;
+	background-size: contain;
+	transition: .35s;
+	}
+
+#buyCD {
+	width: 298px;
+	height: 40px;
+	color: #7D7D7D;
+	font-size: 15px;
+	font-family: "Magistral";
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	line-height: 40px;
+	background: transparent;
+	border: 1px solid #7D7D7D;
+	position: relative;
+	top: 320px;
+	}
+
+.buyLink {
+	display: contents;
+	}
+
+.buyLink:hover {
+	cursor: pointer;
+	}
+
+.buyLink:hover #cover4 {
+	margin-right: 150px;
+	}
+
+.buyLink:hover #disc4 {
+	margin-left: 150px;
+	transform: rotate(25deg);
+	}
+
+.buyLink:hover #buyCD {
+	color: #000;
+	background: #D9974B;
+	border: 1px solid #D9974B;
+	}
+
+.CD {
+	width: 300px;
+	height: 300px;
+	background: #000;
+	position: absolute;
+	}
+
+#playlist {
+	width: 420px;
+	height: 362px;
+	background: #000;
+	float: right;
+	}
