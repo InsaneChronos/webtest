@@ -1,5 +1,31 @@
 /* ------------------------- DESKTOP VERSION ------------------------- */
 
+
+
+
+function scrollList() {
+
+	var slider = document.getElementById("slider");
+	var prev = document.getElementById("prev");
+	var next = document.getElementById("next");
+	var x = slider.scrollLeft;
+
+	if (x > 0) {prev.style.pointerEvents = "all"; prev.style.opacity = "1";}
+	if (x == 0) {prev.style.pointerEvents = "none"; prev.style.opacity = ".5";}
+	if (x > 700) {next.style.pointerEvents = "none"; next.style.opacity = ".5";}
+	if (x < 700) {next.style.pointerEvents = "all"; next.style.opacity = "1";}
+
+	document.getElementById ("demo").innerHTML = "Горизонтально: " + x + "px";
+
+	}
+
+
+
+
+
+
+
+
 currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
 currentLinks.forEach(link => link.className += 'current-link');
 
@@ -19,6 +45,22 @@ document.getElementById("nuts").addEventListener("mouseout", function() {
 	document.getElementById("squirrel").style.background = "none";
 	}
 	);
+
+const slider4 = document.querySelector(".slider-4");
+const slide4 = document.querySelector(".slide-4");
+
+function carousel4(positive = true) {
+	const slideWidth = slide4.clientWidth;
+	slider4.scrollLeft = positive ? slider4.scrollLeft + slideWidth : slider4.scrollLeft - slideWidth;
+	}
+
+const slider3 = document.querySelector(".slider-3");
+const slide3 = document.querySelector(".slide-3");
+
+function carousel3(positive = true) {
+	const slideWidth = slide3.clientWidth;
+	slider3.scrollLeft = positive ? slider3.scrollLeft + slideWidth : slider3.scrollLeft - slideWidth;
+	}
 
 function openNav() {
 
