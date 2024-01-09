@@ -1178,16 +1178,16 @@ textarea:focus-visible {
 	}
 
 .album {
-	display: none;
+	visibility: hidden;
 	}
 	
 .activeAlbum {
-	display: block;
+	visibility: visible !important;
 	color: #D9974B;
 	}
 
 .play {
-	display: block;
+	visibility: visible;
 	}
 
 #album1,
