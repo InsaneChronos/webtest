@@ -1,31 +1,5 @@
 /* ------------------------- DESKTOP VERSION ------------------------- */
 
-
-
-
-function scrollList() {
-
-	var slider = document.getElementById("slider");
-	var prev = document.getElementById("prev");
-	var next = document.getElementById("next");
-	var x = slider.scrollLeft;
-
-	if (x > 0) {prev.style.pointerEvents = "all"; prev.style.opacity = "1";}
-	if (x == 0) {prev.style.pointerEvents = "none"; prev.style.opacity = ".5";}
-	if (x > 700) {next.style.pointerEvents = "none"; next.style.opacity = ".5";}
-	if (x < 700) {next.style.pointerEvents = "all"; next.style.opacity = "1";}
-
-	document.getElementById ("demo").innerHTML = "Горизонтально: " + x + "px";
-
-	}
-
-
-
-
-
-
-
-
 currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
 currentLinks.forEach(link => link.className += 'current-link');
 
@@ -45,22 +19,6 @@ document.getElementById("nuts").addEventListener("mouseout", function() {
 	document.getElementById("squirrel").style.background = "none";
 	}
 	);
-
-const slider4 = document.querySelector(".slider-4");
-const slide4 = document.querySelector(".slide-4");
-
-function carousel4(positive = true) {
-	const slideWidth = slide4.clientWidth;
-	slider4.scrollLeft = positive ? slider4.scrollLeft + slideWidth : slider4.scrollLeft - slideWidth;
-	}
-
-const slider3 = document.querySelector(".slider-3");
-const slide3 = document.querySelector(".slide-3");
-
-function carousel3(positive = true) {
-	const slideWidth = slide3.clientWidth;
-	slider3.scrollLeft = positive ? slider3.scrollLeft + slideWidth : slider3.scrollLeft - slideWidth;
-	}
 
 function openNav() {
 
@@ -185,18 +143,21 @@ function albumSelect() {
 	var albumEnTitle1 = document.getElementById("albumEnTitle1");
 
 	albumSelect.style.zIndex = "0";
-	albumSelect4.style.display = "block";
+	albumSelect4.style.visibility = "visible";
 	albumSelect4.style.background = "#242424";
 	albumSelect4.style.border = "none";
-	albumSelect3.style.display = "block";
+	albumSelect3.style.visibility = "visible";
 	albumSelect3.style.background = "#242424";
 	albumSelect3.style.border = "none";
-	albumSelect2.style.display = "block";
+	albumSelect3.style.top = "0px";
+	albumSelect2.style.visibility = "visible";
 	albumSelect2.style.background = "#242424";
 	albumSelect2.style.border = "none";
-	albumSelect1.style.display = "block";
+	albumSelect2.style.top = "0px";
+	albumSelect1.style.visibility = "visible";
 	albumSelect1.style.background = "#242424";
 	albumSelect1.style.border = "none";
+	albumSelect1.style.top = "0px";
 	albumSelect4.classList.remove("activeAlbum");
 	albumSelect3.classList.remove("activeAlbum");
 	albumSelect2.classList.remove("activeAlbum");
@@ -210,6 +171,10 @@ function albumSelect() {
 	albumEnTitle3.style.setProperty("color", "#6F6F6F");
 	albumEnTitle2.style.setProperty("color", "#6F6F6F");
 	albumEnTitle1.style.setProperty("color", "#6F6F6F");
+	album4.style.opacity = "1";
+	album3.style.opacity = "1";
+	album2.style.opacity = "1";
+	album1.style.opacity = "1";
 
 	}
 
@@ -228,22 +193,25 @@ function albumSelect4() {
 	var albumCover = document.getElementById("albumCover4");
 
 	albumSelect.style.zIndex = "994";
-	albumSelect4.style.display = "block";
+	albumSelect4.style.visibility = "visible";
 	albumSelect4.style.background = "none";
 	albumSelect4.style.border = "1px solid #2D2D2D";
-	albumSelect3.style.display = "none";
-	albumSelect2.style.display = "none";
-	albumSelect1.style.display = "none";
+	albumSelect3.style.visibility = "hidden";
+	albumSelect2.style.visibility = "hidden";
+	albumSelect1.style.visibility = "hidden";
 	albumSelect4.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
 	
-	if (albumSelect4.style.display = "block")
+	if (albumSelect4.style.visibility = "visible")
 		{
 		album4.classList.add("play");
 		album3.classList.remove("play");
+		album3.style.opacity = "0";
 		album2.classList.remove("play");
+		album2.style.opacity = "0";
 		album1.classList.remove("play");
+		album1.style.opacity = "0";
 		albumCover.classList.add("activeCover");
 		}
 
@@ -265,24 +233,28 @@ function albumSelect3() {
 	var albumEnTitle3 = document.getElementById("albumEnTitle3");
 
 	albumSelect.style.zIndex = "994";
-	albumSelect4.style.display = "none";
-	albumSelect3.style.display = "block";
+	albumSelect4.style.visibility = "hidden";
+	albumSelect3.style.visibility = "visible";
 	albumSelect3.style.background = "none";
 	albumSelect3.style.border = "1px solid #2D2D2D";
-	albumSelect2.style.display = "none";
-	albumSelect1.style.display = "none";
+	albumSelect3.style.top = "-74px";
+	albumSelect2.style.visibility = "hidden";
+	albumSelect1.style.visibility = "hidden";
 	albumSelect3.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
 	albumEnTitle3.style = ("color: #D9974B !important");
 
 	
-	if (albumSelect3.style.display = "block")
+	if (albumSelect3.style.visibility = "visible")
 		{
 		album4.classList.remove("play");
+		album4.style.opacity = "0";
 		album3.classList.add("play");
 		album2.classList.remove("play");
+		album2.style.opacity = "0";
 		album1.classList.remove("play");
+		album1.style.opacity = "0";
 		albumCover.classList.add("activeCover");
 		}
 
@@ -304,23 +276,27 @@ function albumSelect2() {
 	var albumEnTitle2 = document.getElementById("albumEnTitle2");
 
 	albumSelect.style.zIndex = "994";
-	albumSelect4.style.display = "none";
-	albumSelect3.style.display = "none";
-	albumSelect2.style.display = "block";
+	albumSelect4.style.visibility = "hidden";
+	albumSelect3.style.visibility = "hidden";
+	albumSelect2.style.visibility = "visible";
 	albumSelect2.style.background = "none";
 	albumSelect2.style.border = "1px solid #2D2D2D";
-	albumSelect1.style.display = "none";
+	albumSelect2.style.top = "-148px";
+	albumSelect1.style.visibility = "hidden";
 	albumSelect2.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
 	albumEnTitle2.style = ("color: #D9974B !important");
 	
-	if (albumSelect2.style.display = "block")
+	if (albumSelect2.style.visibility = "visible")
 		{
 		album4.classList.remove("play");
+		album4.style.opacity = "0";
 		album3.classList.remove("play");
+		album3.style.opacity = "0";
 		album2.classList.add("play");
 		album1.classList.remove("play");
+		album1.style.opacity = "0";
 		albumCover.classList.add("activeCover");
 		}
 
@@ -342,26 +318,59 @@ function albumSelect1() {
 	var albumEnTitle1 = document.getElementById("albumEnTitle1");
 
 	albumSelect.style.zIndex = "994";
-	albumSelect4.style.display = "none";
-	albumSelect3.style.display = "none";
-	albumSelect2.style.display = "none";
-	albumSelect1.style.display = "block";
+	albumSelect4.style.visibility = "hidden";
+	albumSelect3.style.visibility = "hidden";
+	albumSelect2.style.visibility = "hidden";
+	albumSelect1.style.visibility = "visible";
 	albumSelect1.style.background = "none";
 	albumSelect1.style.border = "1px solid #2D2D2D";
+	albumSelect1.style.top = "-222px";
 	albumSelect1.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
 	albumEnTitle1.style = ("color: #D9974B !important");
 	
-	if (albumSelect1.style.display = "block")
+	if (albumSelect1.style.visibility = "visible")
 		{
 		album4.classList.remove("play");
+		album4.style.opacity = "0";
 		album3.classList.remove("play");
+		album3.style.opacity = "0";
 		album2.classList.remove("play");
+		album2.style.opacity = "0";
 		album1.classList.add("play");
 		albumCover.classList.add("activeCover");
 		}
 
+	}
+
+const slider4 = document.querySelector(".slider-4");
+const slide4 = document.querySelector(".slide-4");
+const slider3 = document.querySelector(".slider-3");
+const slide3 = document.querySelector(".slide-3");
+const slider2 = document.querySelector(".slider-2");
+const slide2 = document.querySelector(".slide-2");
+const slider1 = document.querySelector(".slider-1");
+const slide1 = document.querySelector(".slide-1");
+
+function scroll4(positive = true) {
+	const slideWidth = slide4.clientWidth;
+	slider4.scrollLeft = positive ? slider4.scrollLeft + slideWidth : slider4.scrollLeft - slideWidth;
+	}
+
+function scroll3(positive = true) {
+	const slideWidth = slide3.clientWidth;
+	slider3.scrollLeft = positive ? slider3.scrollLeft + slideWidth : slider3.scrollLeft - slideWidth;
+	}
+
+function scroll2(positive = true) {
+	const slideWidth = slide2.clientWidth;
+	slider2.scrollLeft = positive ? slider2.scrollLeft + slideWidth : slider2.scrollLeft - slideWidth;
+	}
+
+function scroll1(positive = true) {
+	const slideWidth = slide1.clientWidth;
+	slider1.scrollLeft = positive ? slider1.scrollLeft + slideWidth : slider1.scrollLeft - slideWidth;
 	}
 
 /* ------------------------- MOBILE VERSION ------------------------- */
