@@ -22,6 +22,8 @@
 
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -186,27 +188,23 @@
 
 <h2>Купить альбом в цифровом формате</h2>
 
-<button id="prev" class="carousel-arrow carousel-arrow--prev" onclick="carousel4(false)"></button>
+<div id="slider" class="slider-4">
 
-<button id="next" class="carousel-arrow carousel-arrow--next" onclick="carousel4()"></button>
-  
-  <div id="slider" class="slider-4" onscroll="scrollList()">
-    <div class="slide-4">1</div>
-    <div class="slide-4">2</div>
-    <div class="slide-4">3</div>
-    <div class="slide-4">4</div>
-    <div class="slide-4">5</div>
-    <div class="slide-4">6</div>
-    <div class="slide-4">7</div>
-    <div class="slide-4">8</div>
-	
-  </div>
-  
+<div class="slide-4"><a href="#"><div><img src="https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/bandcamp-c.svg">bandcamp</div></a></div>
 
+<div class="slide-4"><a href="#"><div><img src="https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/itunes-c.svg">iTunes</div></a></div>
+
+<div class="slide-4"><a href="#"><div><img src="https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/googleplay-c.svg">Google Play</div></a></div>
+
+<div class="slide-4"><a href="#"><div><img src="https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/spotify-c.svg">Spotify</div></a></div>
+
+<button id="prev" class="carousel-arrow carousel-arrow--prev" onclick="scroll4(false)"></button>
+
+<button id="next" class="carousel-arrow carousel-arrow--next" onclick="scroll4()"></button>
 
 </div>
 
-  <p id="demo"></p>
+</div>
 
 
 
@@ -252,24 +250,29 @@
 
 <h2>Купить альбом в цифровом формате</h2>
 
-  <button class="carousel-arrow carousel-arrow--prev" onclick="carousel3(false)">
-    &#8249;
-  </button>
+<div id="slider" class="slider-3">
 
-  <button class="carousel-arrow carousel-arrow--next" onclick="carousel3()">
-    &#8250;
-  </button>
-  
-  <div class="slider-3">
-    <div class="slide-3">1</div>
-    <div class="slide-3">2</div>
-    <div class="slide-3">3</div>
-    <div class="slide-3">4</div>
-    <div class="slide-3">5</div>
-    <div class="slide-3">6</div>
-    <div class="slide-3">7</div>
-    <div class="slide-3">8</div>
-  </div>
+<div class="slide-3">1</div>
+
+<div class="slide-3">2</div>
+
+<div class="slide-3">3</div>
+
+<div class="slide-3">4</div>
+
+<div class="slide-3">5</div>
+
+<div class="slide-3">6</div>
+
+<div class="slide-3">7</div>
+
+<div class="slide-3">8</div>
+
+<button id="prev" class="carousel-arrow carousel-arrow--prev" onclick="scroll3(false)"></button>
+
+<button id="next" class="carousel-arrow carousel-arrow--next" onclick="scroll3()"></button>
+
+</div>
 
 </div>
 
@@ -366,7 +369,27 @@
 <h1 id="titleFooter" class="titles fadeIn">SVENTOYA<span class="lastLetter">R</span></h1>
 
 <div id="footerPage"></div>
-   
+
+<script>
+
+$(".slider-4").scroll(function(e) {
+
+	var _this = this
+
+	$(".carousel-arrow--prev", this).css({
+	pointerEvents: _this.scrollLeft > 0 ? "all" : "none",
+	opacity: _this.scrollLeft > 0 ? "1" : ".5"
+	});
+
+	$(".carousel-arrow--next", this).css({
+	pointerEvents: _this.scrollWidth === (_this.scrollLeft + _this.clientWidth) ? "none" : "all",
+	opacity: _this.scrollWidth === (_this.scrollLeft + _this.clientWidth) ? ".5" : "1"
+	});
+
+	}).scroll();
+
+</script>
+
 </body>
 
 </html>
