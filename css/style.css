@@ -1460,7 +1460,7 @@ textarea:focus-visible {
 	}
 
 .carousel-arrow:hover {
-  filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg) !important;
+  filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
 }
 
 .carousel-arrow--prev {
@@ -1471,7 +1471,10 @@ textarea:focus-visible {
   right: 0;
 }
 
-.slider-1, .slider-2, .slider-3, .slider-4 {
+.slider-1,
+.slider-2,
+.slider-3,
+.slider-4 {
 width: calc(100% - 160px);
     overflow: hidden;
     display: flex;
@@ -1479,7 +1482,10 @@ width: calc(100% - 160px);
 	margin: auto;
 }
 
-.slide-1, .slide-2, .slide-3, .slide-4 {
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4 {
 	height: 100px;
 	flex: 0 0 calc(25% - 0.25px);
 	aspect-ratio: 1;
@@ -1495,8 +1501,6 @@ width: calc(100% - 160px);
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
 	background-size: contain;
 	transform: rotate(180deg);
-	pointer-events: none;
-	opacity: .5;
 	}
 
 #next {
@@ -1504,5 +1508,49 @@ width: calc(100% - 160px);
 	height: 100px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
 	background-size: contain;
-	opacity: 1;
+	}
+
+.slide-1 div,
+.slide-2 div,
+.slide-3 div,
+.slide-4 div {
+	display: flex;
+	align-items: center;
+	}
+
+.slide-1 div:hover,
+.slide-2 div:hover,
+.slide-3 div:hover,
+.slide-4 div:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+	}
+
+.slide-1 div:hover > img,
+.slide-2 div:hover > img,
+.slide-3 div:hover > img,
+.slide-4 div:hover > img {
+	border: 1px solid transparent;
+	}
+
+.slide-1 img,
+.slide-2 img,
+.slide-3 img,
+.slide-4 img {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #7D7D7D;
+	border-radius: 50%;
+	padding: 10px;
+	margin-right: 10px;
+	}
+
+.slide-1 a,
+.slide-2 a,
+.slide-3 a,
+.slide-4 a {
+	font-size: 14px;
+	color: #7D7D7D;
+	font-family: "Magistral";
+	font-weight: 500;
+	font-style: normal;
 	}
