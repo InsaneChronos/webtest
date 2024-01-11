@@ -437,6 +437,8 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("content").style.width = "80%";
 	document.getElementById("content").style.height = "calc(100% - 200px)";
 	document.getElementById("content").style.top = "100px";
+	document.getElementById("content").style.overflowX = "hidden";
+	document.getElementById("content").style.zIndex = "992";
 	document.getElementById("footerPage").style.height = "100px";
 	document.getElementById("titleFooter").style.bottom = "6.5%";
 	document.getElementById("titleFooter").style.fontSize = "10px";
@@ -444,12 +446,12 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("merchContainer").style.width = "60px";
 	document.getElementById("merchContainer").style.margin = "5px auto";
 	document.getElementById("merchContainer").style.left = "15px";
-	document.getElementById("merchContainer").style.zIndex = "998";
+	document.getElementById("merchContainer").style.zIndex = "990";
 	document.getElementById("merch").style.width = "60px";
 	document.getElementById("nutsContainer").style.width = "75px";
 	document.getElementById("nutsContainer").style.height = "130px";
 	document.getElementById("nutsContainer").style.bottom = "7.5px";
-	document.getElementById("nutsContainer").style.zIndex = "998";
+	document.getElementById("nutsContainer").style.zIndex = "990";
 	document.getElementById("nuts").style.width = "75px";
 	document.getElementById("nuts").style.height = "130px";
 	document.getElementById("squirrel").style.width = "75px";
@@ -462,5 +464,9 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 		social[count].style.width = "50px";
 		social[count].style.height = "50px";
 		}
+
+	document.querySelectorAll("#discs").forEach(x=>x.classList.add("discs-m"));
+	document.querySelectorAll("#playlist").forEach(x=>x.classList.add("playlist-m"));
+	document.querySelectorAll(".slide-1, .slide-2, .slide-3, .slide-4").forEach(x=>x.classList.add("slide-m"));
 
 	}
