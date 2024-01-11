@@ -1330,20 +1330,27 @@ textarea:focus-visible {
 	float: left;
 	}
 
+.discs-m {
+	width: 100% !important;
+	float: none !important;
+	position: relative;
+	top: -20px;
+	}
+
 #disc1 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/ethnix-cd.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/strength-cd.png) center no-repeat;
 	background-size: contain;
 	transition: .35s;
 	}
 
 #disc2 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/ethnix-cd.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/strength-cd.png) center no-repeat;
 	background-size: contain;
 	transition: .35s;
 	}
 
 #disc3 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/ethnix-cd.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/strength-cd.png) center no-repeat;
 	background-size: contain;
 	transition: .35s;
 	}
@@ -1411,6 +1418,14 @@ textarea:focus-visible {
 	width: 50%;
 	height: 362px;
 	float: right;
+	}
+
+.playlist-m {
+	width: 100% !important;
+	float: none !important;
+	position: relative;
+	top: 20px;
+	display: flex;
 	}
 
 #vk_playlist_-5724897_43873507,
@@ -1494,6 +1509,10 @@ width: calc(100% - 160px);
 	justify-content: center;
 	align-items: center;
 }
+
+.slide-m {
+	flex: 0 0 calc(100% - 0.25px) !important;
+	}
 
 #prev {
 	width: 20px;
