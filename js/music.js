@@ -344,33 +344,33 @@ function albumSelect1() {
 
 	}
 
-const slider4 = document.querySelector(".slider-4");
-const slide4 = document.querySelector(".slide-4");
-const slider3 = document.querySelector(".slider-3");
-const slide3 = document.querySelector(".slide-3");
-const slider2 = document.querySelector(".slider-2");
-const slide2 = document.querySelector(".slide-2");
-const slider1 = document.querySelector(".slider-1");
-const slide1 = document.querySelector(".slide-1");
+const albumSlider4 = document.querySelector(".albumSlider-4");
+const albumSlide4 = document.querySelector(".albumSlide-4");
+const albumSlider3 = document.querySelector(".albumSlider-3");
+const albumSlide3 = document.querySelector(".albumSlide-3");
+const albumSlider2 = document.querySelector(".albumSlider-2");
+const albumSlide2 = document.querySelector(".albumSlide-2");
+const albumSlider1 = document.querySelector(".albumSlider-1");
+const albumSlide1 = document.querySelector(".albumSlide-1");
 
-function scroll4(positive = true) {
-	const slideWidth = slide4.clientWidth;
-	slider4.scrollLeft = positive ? slider4.scrollLeft + slideWidth : slider4.scrollLeft - slideWidth;
+function albumScroll4(positive = true) {
+	const slideWidth = albumSlide4.clientWidth;
+	albumSlider4.scrollLeft = positive ? albumSlider4.scrollLeft + slideWidth : albumSlider4.scrollLeft - slideWidth;
 	}
 
-function scroll3(positive = true) {
-	const slideWidth = slide3.clientWidth;
-	slider3.scrollLeft = positive ? slider3.scrollLeft + slideWidth : slider3.scrollLeft - slideWidth;
+function albumScroll3(positive = true) {
+	const slideWidth = albumSlide3.clientWidth;
+	albumSlider3.scrollLeft = positive ? albumSlider3.scrollLeft + slideWidth : albumSlider3.scrollLeft - slideWidth;
 	}
 
-function scroll2(positive = true) {
-	const slideWidth = slide2.clientWidth;
-	slider2.scrollLeft = positive ? slider2.scrollLeft + slideWidth : slider2.scrollLeft - slideWidth;
+function albumScroll2(positive = true) {
+	const slideWidth = albumSlide2.clientWidth;
+	albumSlider2.scrollLeft = positive ? albumSlider2.scrollLeft + slideWidth : albumSlider2.scrollLeft - slideWidth;
 	}
 
-function scroll1(positive = true) {
-	const slideWidth = slide1.clientWidth;
-	slider1.scrollLeft = positive ? slider1.scrollLeft + slideWidth : slider1.scrollLeft - slideWidth;
+function albumScroll1(positive = true) {
+	const slideWidth = albumSlide1.clientWidth;
+	albumSlider1.scrollLeft = positive ? albumSlider1.scrollLeft + slideWidth : albumSlider1.scrollLeft - slideWidth;
 	}
 
 /* ------------------------- MOBILE VERSION ------------------------- */
@@ -457,9 +457,9 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("squirrel").style.width = "75px";
 	document.getElementById("squirrel").style.height = "130px";
 
-    var social = document.getElementsByClassName("social-link");
-    var count;
-    for (count = 0; count < social.length; count++) {
+	var social = document.getElementsByClassName("social-link");
+	var count;
+	for (count = 0; count < social.length; count++) {
 		social[count].style.margin = "5px";
 		social[count].style.width = "50px";
 		social[count].style.height = "50px";
@@ -467,6 +467,7 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 
 	document.querySelectorAll("#discs").forEach(x=>x.classList.add("discs-m"));
 	document.querySelectorAll("#playlist").forEach(x=>x.classList.add("playlist-m"));
-	document.querySelectorAll(".slide-1, .slide-2, .slide-3, .slide-4").forEach(x=>x.classList.add("slide-m"));
+	document.querySelectorAll(".albumSlider-1, .albumSlider-2, .albumSlider-3, .albumSlider-4").forEach(x=>x.classList.add("albumSlider-m"));
+	document.querySelectorAll(".albumSlide-1, .albumSlide-2, .albumSlide-3, .albumSlide-4").forEach(x=>x.classList.add("albumSlide-m"));
 
 	}
