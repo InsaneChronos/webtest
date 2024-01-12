@@ -127,7 +127,7 @@ function selectLang() {
 	}
 
 function albumSelect() {
-	
+
 	var albumSelect = document.getElementById("albumSelect");
 	var albumSelect4 = document.getElementById("albumSelect4");
 	var albumSelect3 = document.getElementById("albumSelect3");
@@ -179,7 +179,7 @@ function albumSelect() {
 	}
 
 function albumSelect4() {
-	
+
 	var albumSelect = document.getElementById("albumSelect");
 	var albumSelect4 = document.getElementById("albumSelect4");
 	var albumSelect3 = document.getElementById("albumSelect3");
@@ -202,7 +202,7 @@ function albumSelect4() {
 	albumSelect4.classList.add("activeAlbum");
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
-	
+
 	if (albumSelect4.style.visibility = "visible")
 		{
 		album4.classList.add("play");
@@ -218,7 +218,7 @@ function albumSelect4() {
 	}
 
 function albumSelect3() {
-	
+
 	var albumSelect = document.getElementById("albumSelect");
 	var albumSelect4 = document.getElementById("albumSelect4");
 	var albumSelect3 = document.getElementById("albumSelect3");
@@ -245,7 +245,6 @@ function albumSelect3() {
 	moreAlbums.setAttribute("onclick","albumSelect()");
 	albumEnTitle3.style = ("color: #D9974B !important");
 
-	
 	if (albumSelect3.style.visibility = "visible")
 		{
 		album4.classList.remove("play");
@@ -258,10 +257,14 @@ function albumSelect3() {
 		albumCover.classList.add("activeCover");
 		}
 
+	if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
+		albumEnTitle3.style = ("margin-top: 5px !important");
+		}
+
 	}
 
 function albumSelect2() {
-	
+
 	var albumSelect = document.getElementById("albumSelect");
 	var albumSelect4 = document.getElementById("albumSelect4");
 	var albumSelect3 = document.getElementById("albumSelect3");
@@ -287,7 +290,7 @@ function albumSelect2() {
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
 	albumEnTitle2.style = ("color: #D9974B !important");
-	
+
 	if (albumSelect2.style.visibility = "visible")
 		{
 		album4.classList.remove("play");
@@ -298,6 +301,10 @@ function albumSelect2() {
 		album1.classList.remove("play");
 		album1.style.opacity = "0";
 		albumCover.classList.add("activeCover");
+		}
+
+	if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
+		albumEnTitle2.style = ("margin-top: 5px !important");
 		}
 
 	}
@@ -329,7 +336,7 @@ function albumSelect1() {
 	moreAlbums.style.filter = "none";
 	moreAlbums.setAttribute("onclick","albumSelect()");
 	albumEnTitle1.style = ("color: #D9974B !important");
-	
+
 	if (albumSelect1.style.visibility = "visible")
 		{
 		album4.classList.remove("play");
@@ -340,6 +347,10 @@ function albumSelect1() {
 		album2.style.opacity = "0";
 		album1.classList.add("play");
 		albumCover.classList.add("activeCover");
+		}
+
+	if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
+		albumEnTitle1.style = ("margin-top: 5px !important");
 		}
 
 	}
@@ -415,6 +426,22 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 
 	}
 
+	function selectLang() {
+
+		var langOpacity = document.getElementById("langContainer");
+		var actualOpacity = getComputedStyle(langOpacity).opacity;
+
+		document.getElementById("langContainer").style.opacity = "1";
+		document.getElementById("secondLang").style.display = "flex";
+		document.getElementById("langContainer").style.marginTop = "80px";
+
+		if (actualOpacity == "1") {
+			langOpacity.style.opacity = "0";
+			langOpacity.style.marginTop = "-80px";
+			}
+
+	}
+
 	document.getElementById("nav-links").style.textAlign = "center";
 	document.getElementById("nav-links").style.paddingTop = "35px";
 	document.getElementById("social-links").style.width = "250px";
@@ -430,7 +457,9 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("open-menu").style.display = "flex";
 	document.getElementById("open-menu").style.left = "15px";
 	document.getElementById("langSelect").style.right = "15px";
-	document.getElementById("langContainer").style.right = "-8px";
+	document.getElementById("langContainer").style.width = "0px";
+	document.getElementById("langContainer").style.height = "0px";
+	document.getElementById("langContainer").style.right = "40px";
 	document.getElementById("topPage").style.height = "100px";
 	document.getElementById("titleTop").style.top = "6.5%";
 	document.getElementById("titleTop").style.color = "#9D9D9D";
@@ -439,6 +468,9 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	document.getElementById("content").style.top = "100px";
 	document.getElementById("content").style.overflowX = "hidden";
 	document.getElementById("content").style.zIndex = "992";
+	document.getElementById("albumEnTitle1").style = ("margin-top: 5px !important");
+	document.getElementById("albumEnTitle2").style = ("margin-top: 5px !important");
+	document.getElementById("albumEnTitle3").style = ("margin-top: 5px !important");
 	document.getElementById("footerPage").style.height = "100px";
 	document.getElementById("titleFooter").style.bottom = "6.5%";
 	document.getElementById("titleFooter").style.fontSize = "10px";
@@ -467,6 +499,8 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 
 	document.querySelectorAll("#discs").forEach(x=>x.classList.add("discs-m"));
 	document.querySelectorAll("#playlist").forEach(x=>x.classList.add("playlist-m"));
+	document.querySelectorAll("#albumTitle").forEach(x=>x.style.width = "50%");
+	document.querySelectorAll("#albumTitle").forEach(x=>x.style.lineHeight = "10px");
 	document.querySelectorAll(".albumSlider-1, .albumSlider-2, .albumSlider-3, .albumSlider-4").forEach(x=>x.classList.add("albumSlider-m"));
 	document.querySelectorAll(".albumSlide-1, .albumSlide-2, .albumSlide-3, .albumSlide-4").forEach(x=>x.classList.add("albumSlide-m"));
 
