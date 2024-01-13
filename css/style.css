@@ -1457,7 +1457,8 @@ textarea:focus-visible {
 	margin: 0;
 	}
 
-#albumSlide-prev {
+#albumSlide-prev,
+#photosSlide-prev {
 	width: 20px;
 	height: 100px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
@@ -1465,20 +1466,23 @@ textarea:focus-visible {
 	transform: rotate(180deg);
 	}
 
-#albumSlide-next {
+#albumSlide-next,
+#photosSlide-next {
 	width: 20px;
 	height: 100px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
 	background-size: contain;
 	}
 
-.albumSlider-arrow {
+.albumSlider-arrow,
+.photosSlider-arrow {
 	position: absolute;
 	border: none;
 	cursor: pointer;
 	}
 
-.albumSlider-arrow:hover {
+.albumSlider-arrow:hover,
+.photosSlider-arrow:hover {
   filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
 }
 
@@ -1567,4 +1571,136 @@ textarea:focus-visible {
 	font-family: "Magistral";
 	font-weight: 500;
 	font-style: normal;
+	}
+
+#photosAlbums {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	}
+
+#photosYear {
+	font-size: 14px;
+	color: #D9974B;
+	font-family: "Magistral";
+	font-weight: 100;
+	font-style: normal;
+	text-align: left;
+	border-bottom: 1px solid #3D3D3D;
+	}
+
+#photosSliders {
+	padding-top: 20px;
+	}
+
+.photosSlider-arrow-prev {
+  left: 25px;
+}
+
+.photosSlider-arrow-next {
+  right: 25px;
+}
+
+.photosSlider-2018,
+.photosSlider-2017 {
+	width: calc(100% - 80px);
+	overflow-x: hidden;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	gap: 10px;
+	}
+
+.photosSlider a {
+	width: 100%;
+	color: #BDBDBD;
+	}
+
+.photosSlide-2018,
+.photosSlide-2017 {
+	flex: 0 0 calc(25% - 8px);
+	flex-flow: column wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.photosCover {
+	aspect-ratio: 16/9;
+	width: 100%;
+	border: 1px solid #7D7D7D;
+	filter: grayscale(1);
+	opacity: .75;
+	}
+
+.photosSlide-2018:hover .photosCover,
+.photosSlide-2017:hover .photosCover {
+	border: 1px solid #D9974B;
+	filter: none;
+	opacity: 1;
+	}
+
+.photosSlide-2018:hover .photosTitle,
+.photosSlide-2017:hover .photosTitle {
+	color: #D9974B;
+	}
+
+#cover-2018-1 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2018-2 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2018-3 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2018-4 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2018-5 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2018-6 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2017-1 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2017-2 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2017-3 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2017-4 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2017-5 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
+	}
+
+#cover-2017-6 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: cover;
 	}
