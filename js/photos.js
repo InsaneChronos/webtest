@@ -6,6 +6,9 @@ currentLinks.forEach(link => link.className += 'current-link');
 var navMargin = document.getElementById("sidenav");
 var actualMargin = getComputedStyle(navMargin).marginLeft;
 
+document.getElementById("photoSlide-prev").style.opacity = ".5";
+document.getElementById("photoSlide-prev").style.pointerEvents = "none";
+
 document.getElementById("nuts").addEventListener("mouseover", function() {
 	document.getElementById("squirrel").style.display = "block";
 	document.getElementById("squirrel").style.background = "url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/squirrel.png) left center no-repeat";
@@ -131,6 +134,9 @@ const photosSlide2018 = document.querySelector(".photosSlide-2018");
 const photosSlider2017 = document.querySelector(".photosSlider-2017");
 const photosSlide2017 = document.querySelector(".photosSlide-2017");
 
+const photoSlider = document.querySelector(".photo");
+const photo = document.querySelector(".photoSlider");
+
 function photos2018(positive = true) {
 	const slideWidth = photosSlide2018.clientWidth;
 	photosSlider2018.scrollLeft = positive ? photosSlider2018.scrollLeft + slideWidth + 10 : photosSlider2018.scrollLeft - slideWidth - 10;
@@ -140,6 +146,58 @@ function photos2017(positive = true) {
 	const slideWidth = photosSlide2017.clientWidth;
 	photosSlider2017.scrollLeft = positive ? photosSlider2017.scrollLeft + slideWidth + 10 : photosSlider2017.scrollLeft - slideWidth - 10;
 	}
+
+function open2018Album1() {
+	document.getElementById("photoAlbum-2018-1").classList.remove("photoAlbumsHidden");
+	document.getElementById("photoAlbum-2018-1").classList.add("photoAlbumsVisible");
+	}
+
+function close2018Album1() {
+	document.getElementById("photoAlbum-2018-1").classList.remove("photoAlbumsVisible");
+	document.getElementById("photoAlbum-2018-1").classList.add("photoAlbumsHidden");
+	}
+
+function photo2018(positive = true) {
+	const slideWidth = photoSlider.clientWidth;
+	photo.scrollLeft = positive ? photo.scrollLeft + slideWidth : photo.scrollLeft - slideWidth;
+	}
+
+
+
+
+
+
+
+
+
+photo.onscroll = function (event) {
+
+	if (photo.scrollLeft + photo.offsetWidth == photo.scrollWidth) {
+		document.getElementById("photoSlide-next").style.opacity = ".5";
+		document.getElementById("photoSlide-next").style.pointerEvents = "none";
+		}
+
+	else if (photo.scrollLeft == 0) {
+		document.getElementById("photoSlide-prev").style.opacity = ".5";
+		document.getElementById("photoSlide-prev").style.pointerEvents = "none";
+		}
+
+	else if (photo.scrollLeft > 0) {
+		document.getElementById("photoSlide-prev").style.opacity = "1";
+		document.getElementById("photoSlide-prev").style.pointerEvents = "all";
+		document.getElementById("photoSlide-next").style.opacity = "1";
+		document.getElementById("photoSlide-next").style.pointerEvents = "all";
+		}
+
+	}
+
+
+
+
+
+
+
+
 
 /* ------------------------- MOBILE VERSION ------------------------- */
 
