@@ -1458,7 +1458,8 @@ textarea:focus-visible {
 	}
 
 #albumSlide-prev,
-#photosSlide-prev {
+#photosSlide-prev,
+#photoSlide-prev {
 	width: 20px;
 	height: 100px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
@@ -1467,11 +1468,26 @@ textarea:focus-visible {
 	}
 
 #albumSlide-next,
-#photosSlide-next {
+#photosSlide-next,
+#photoSlide-next {
 	width: 20px;
 	height: 100px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
 	background-size: contain;
+	}
+
+#photoSlide-prev,
+#photoSlide-next {
+	height: 50px !important;
+	top: calc(50% - 25px);
+	}
+
+#photoSlide-prev {
+	left: 45px;
+	}
+
+#photoSlide-next {
+	right: 45px;
 	}
 
 .albumSlider-arrow,
@@ -1611,11 +1627,6 @@ textarea:focus-visible {
 	gap: 10px;
 	}
 
-.photosSlider a {
-	width: 100%;
-	color: #BDBDBD;
-	}
-
 .photosSlide-2018,
 .photosSlide-2017 {
 	flex: 0 0 calc(25% - 8px);
@@ -1633,16 +1644,27 @@ textarea:focus-visible {
 	opacity: .75;
 	}
 
+.photosTitle {
+	width: 100%;
+	color: #BDBDBD;
+	font-size: 12px;
+	font-family: "Magistral";
+	font-weight: 100;
+	font-style: normal;
+	}
+
 .photosSlide-2018:hover .photosCover,
 .photosSlide-2017:hover .photosCover {
 	border: 1px solid #D9974B;
 	filter: none;
 	opacity: 1;
+	cursor: pointer;
 	}
 
 .photosSlide-2018:hover .photosTitle,
 .photosSlide-2017:hover .photosTitle {
 	color: #D9974B;
+	cursor: pointer;
 	}
 
 #cover-2018-1 {
@@ -1704,3 +1726,91 @@ textarea:focus-visible {
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
 	background-size: cover;
 	}
+
+.photoAlbumsHidden {
+	width: 100%;
+	height: 100%;
+	background: #212121;
+	font-size: 14px;
+	color: #BDBDBD;
+	font-family: "Magistral";
+	font-weight: 100;
+	font-style: normal;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	display: none;
+	opacity: 0;
+	transition: .35s;
+	}
+
+.photoAlbumsVisible {
+	width: 100%;
+	height: 100%;
+	background: #212121;
+	font-size: 14px;
+	color: #BDBDBD;
+	font-family: "Magistral";
+	font-weight: 100;
+	font-style: normal;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	opacity: 1;
+	transition: .35s;
+	display: flex;
+	justify-content: center;
+	}
+
+.closeButton {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 35px;
+	top: 35px;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/close.svg) center no-repeat;
+	background-size: cover;
+	}
+
+.closeButton:hover {
+	cursor: pointer;
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+	}
+
+#photoAlbum {
+	width: 60%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+#photoSlider {
+	padding: 0;
+}
+
+.photoSlider {
+	width: 100%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+	margin-bottom: 25px;
+}
+
+.photo {
+    aspect-ratio: 16/9;
+    flex: 0 0 100%;
+    flex-flow: column wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photoDivider {
+	width: 250px;
+	border-bottom: 1px solid #9D9D9D;
+	margin: 0px auto 10px auto;
+	}
+
+.photoTitle {
+	text-align: center;
+}
