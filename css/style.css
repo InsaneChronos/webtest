@@ -1457,9 +1457,12 @@ textarea:focus-visible {
 	margin: 0;
 	}
 
+/* ФОТОАЛЬБОМЫ (НАЧАЛО) */
+
 #albumSlide-prev,
 #photosSlide-prev,
-#photoSlide-prev {
+#photoSlide-2018-1-prev,
+#photoSlide-2018-2-prev {
 	width: 20px;
 	height: 100px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
@@ -1469,36 +1472,48 @@ textarea:focus-visible {
 
 #albumSlide-next,
 #photosSlide-next,
-#photoSlide-next {
+#photoSlide-2018-1-next,
+#photoSlide-2018-2-next {
 	width: 20px;
 	height: 100px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
 	background-size: contain;
 	}
 
-#photoSlide-prev,
-#photoSlide-next {
+#photoSlide-2018-1-prev,
+#photoSlide-2018-1-next,
+#photoSlide-2018-2-prev,
+#photoSlide-2018-2-next {
 	height: 50px !important;
 	top: calc(50% - 25px);
 	}
 
-#photoSlide-prev {
+#photoSlide-2018-1-prev,
+#photoSlide-2018-2-prev {
 	left: 45px;
 	}
 
-#photoSlide-next {
+#photoSlide-2018-1-next,
+#photoSlide-2018-2-next {
 	right: 45px;
 	}
 
+.albumsColumn {
+	display: flex;
+	flex-direction: column;
+	}
+
 .albumSlider-arrow,
-.photosSlider-arrow {
+.photosSlider-arrow,
+.photoSlider-arrow {
 	position: absolute;
 	border: none;
 	cursor: pointer;
 	}
 
 .albumSlider-arrow:hover,
-.photosSlider-arrow:hover {
+.photosSlider-arrow:hover,
+.photoSlider-arrow:hover {
   filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
 }
 
@@ -1595,7 +1610,7 @@ textarea:focus-visible {
 	margin-bottom: 20px;
 	}
 
-#photosYear {
+.photosYear {
 	font-size: 14px;
 	color: #D9974B;
 	font-family: "Magistral";
@@ -1609,11 +1624,13 @@ textarea:focus-visible {
 	padding-top: 20px;
 	}
 
-.photosSlider-arrow-prev {
+.photosSlider-arrow-prev,
+.photoSlider-arrow-prev {
   left: 25px;
 }
 
-.photosSlider-arrow-next {
+.photosSlider-arrow-next,
+.photoSlider-arrow-next {
   right: 25px;
 }
 
@@ -1646,7 +1663,7 @@ textarea:focus-visible {
 
 .photosTitle {
 	width: 100%;
-	color: #BDBDBD;
+	color: #9D9D9D;
 	font-size: 12px;
 	font-family: "Magistral";
 	font-weight: 100;
@@ -1740,8 +1757,6 @@ textarea:focus-visible {
 	top: 0;
 	z-index: 1000;
 	display: none;
-	opacity: 0;
-	transition: .35s;
 	}
 
 .photoAlbumsVisible {
@@ -1756,8 +1771,6 @@ textarea:focus-visible {
 	position: absolute;
 	top: 0;
 	z-index: 1000;
-	opacity: 1;
-	transition: .35s;
 	display: flex;
 	justify-content: center;
 	}
@@ -1777,7 +1790,7 @@ textarea:focus-visible {
 	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
 	}
 
-#photoAlbum {
+.photoAlbum {
 	width: 60%;
 	height: 100%;
 	border-collapse: collapse;
@@ -1813,4 +1826,41 @@ textarea:focus-visible {
 
 .photoTitle {
 	text-align: center;
+	color: #9D9D9D;
 }
+
+/* ФОТОАЛЬБОМЫ (КОНЕЦ) */
+
+/* ФОТОГРАФИИ (НАЧАЛО) */
+
+#photo-2018-1-1 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#photo-2018-1-2 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#photo-2018-1-3 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#photo-2018-1-4 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#photo-2018-1-5 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+#photo-2018-1-6 {
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background-size: contain;
+	}
+
+/* ФОТОГРАФИИ (КОНЕЦ) */
