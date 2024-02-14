@@ -98,11 +98,13 @@
 
 <div id="overlay" onclick="closeNav()"></div>
 
+<!-- ФОТОАЛЬБОМЫ (НАЧАЛО) -->
+
 <div id="content" class="fadeIn" style="width:70%;display:flex;flex-direction:column;align-items:center;">
 
 <table id="photosAlbums">
 
-<tr><th id="photosYear">2018</th></tr>
+<tr><th class="photosYear">2018</th></tr>
 
 <tr>
 
@@ -116,7 +118,7 @@
 
 </div>
 
-<div class="photosSlide-2018">
+<div class="photosSlide-2018" onclick="open2018Album2()">
 
 <div id="cover-2018-2" class="photosCover"></div><div class="photosTitle">Название 2</div>
 
@@ -160,7 +162,7 @@
 
 <table id="photosAlbums">
 
-<tr><th id="photosYear">2017</th></tr>
+<tr><th class="photosYear">2017</th></tr>
 
 <tr>
 
@@ -218,44 +220,41 @@
 
 </div>
 
+<!-- ФОТОАЛЬБОМЫ (КОНЕЦ) -->
 
-
-
-
-
-
+<!-- ФОТОГРАФИИ (НАЧАЛО) -->
 
 <div id="photoAlbum-2018-1" class="photoAlbumsHidden"><div class="closeButton" onclick="close2018Album1()"></div>
 
-<table id="photoAlbum">
+<table class="photoAlbum">
 
 <tr>
 
 <td id="photoSlider">
 
-<div class="photoSlider">
+<div id="photos-2018-1" class="photoSlider">
 
-<div class="photo">1</div>
+<div id="photo-2018-1-1" class="photo photo-2018-1"></div>
 
-<div class="photo">2</div>
+<div id="photo-2018-1-2" class="photo photo-2018-1"></div>
 
-<div class="photo">3</div>
+<div id="photo-2018-1-3" class="photo photo-2018-1"></div>
 
-<div class="photo">4</div>
+<div id="photo-2018-1-4" class="photo photo-2018-1"></div>
 
-<div class="photo">5</div>
+<div id="photo-2018-1-5" class="photo photo-2018-1"></div>
 
-<div class="photo">6</div>
+<div id="photo-2018-1-6" class="photo photo-2018-1"></div>
 
 </div>
 
 <div id="photoDivider"></div>
 
-<div class="photoTitle">Какой-то текст</div>
+<div class="photoTitle">Какой-то текст 1</div>
 
-<button id="photoSlide-prev" class="photosSlider-arrow photosSlider-arrow-prev" onclick="photo2018(false)"></button>
+<button id="photoSlide-2018-1-prev" class="photoSlider-arrow photoSlider-arrow-prev" onclick="photo2018album1(false)"></button>
 
-<button id="photoSlide-next" class="photosSlider-arrow photosSlider-arrow-next" onclick="photo2018()"></button>
+<button id="photoSlide-2018-1-next" class="photoSlider-arrow photoSlider-arrow-next" onclick="photo2018album1()"></button>
 
 </td>
 
@@ -265,15 +264,47 @@
 
 </div>
 
+<div id="photoAlbum-2018-2" class="photoAlbumsHidden"><div class="closeButton" onclick="close2018Album2()"></div>
 
+<table class="photoAlbum">
 
+<tr>
 
+<td id="photoSlider">
 
+<div id="photos-2018-2" class="photoSlider">
 
+<div id="photo-2018-1-1" class="photo photo-2018-2"></div>
 
+<div id="photo-2018-1-2" class="photo photo-2018-2"></div>
 
+<div id="photo-2018-1-3" class="photo photo-2018-2"></div>
 
+<div id="photo-2018-1-4" class="photo photo-2018-2"></div>
 
+<div id="photo-2018-1-5" class="photo photo-2018-2"></div>
+
+<div id="photo-2018-1-6" class="photo photo-2018-2"></div>
+
+</div>
+
+<div id="photoDivider"></div>
+
+<div class="photoTitle">Какой-то текст 2</div>
+
+<button id="photoSlide-2018-2-prev" class="photoSlider-arrow photoSlider-arrow-prev" onclick="photo2018album2(false)"></button>
+
+<button id="photoSlide-2018-2-next" class="photoSlider-arrow photoSlider-arrow-next" onclick="photo2018album2()"></button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ФОТОГРАФИИ (КОНЕЦ) -->
 
 <div id="merchContainer"><a href="#"><div id="merch" class="scale"></div></a></div>
 
