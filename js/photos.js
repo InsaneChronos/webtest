@@ -349,7 +349,13 @@ if (window.innerHeight > window.innerWidth || window.innerWidth < 520){
 	var album = document.getElementsByClassName("photoAlbum");
 	for (var i = 0; i < album.length; i++ ) {album[i].style.width = "100%";}
 
+	var albumTop = document.getElementsByClassName("albumTop");
+	for (var i = 0; i < albumTop.length; i++ ) {albumTop[i].style.width = "100%";}
+
 	var photo = document.getElementsByClassName("photo");
-	for (var i = 0; i < photo.length; i++ ) {photo[i].style.width = "100%"; photo[i].style.height = "100%";}
+	for (var i = 0; i < photo.length; i++ ) {photo[i].style.width = "100%"; photo[i].style.height = "100%"; photo[i].style.aspectRatio = "16/12";}
+
+	var albumTitle = document.getElementsByClassName("albumTitle");
+	for (var i = 0; i < albumTitle.length; i++ ) {albumTitle[i].style.width = "100%"; albumTitle[i].style.bottom = "calc(20% - 80px)";}
 
 	}
