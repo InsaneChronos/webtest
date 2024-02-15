@@ -1783,6 +1783,7 @@ textarea:focus-visible {
 	top: 35px;
 	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/close.svg) center no-repeat;
 	background-size: cover;
+	z-index: 990;
 	}
 
 .closeButton:hover {
@@ -1801,22 +1802,43 @@ textarea:focus-visible {
 }
 
 .photoSlider {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+	}
+
+.photoBG {
 	width: 100%;
-    height: 70%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-	margin-bottom: 25px;
-}
+	height: 100%;
+	position: absolute;
+	}
 
 .photo {
-    aspect-ratio: 16/9;
-    flex: 0 0 100%;
-    flex-flow: column wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+	aspect-ratio: 1;
+	flex: 0 0 100%;
+	flex-flow: column wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.albumTop {
+	width: 60%;
+    padding: 37.5px 0px;
+    position: absolute;
+    top: 0;
+    background: #212121;
+	}
+
+.albumTitle {
+	width: 60%;
+	height: 25px;
+    padding: 25px 0px;
+    position: absolute;
+    bottom: 0;
+    background: #212121;
+	}
 
 #photoDivider {
 	width: 250px;
@@ -1834,32 +1856,32 @@ textarea:focus-visible {
 /* ФОТОГРАФИИ (НАЧАЛО) */
 
 #photo-2018-1-1 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) top no-repeat;
 	background-size: contain;
 	}
 
 #photo-2018-1-2 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) top no-repeat;
 	background-size: contain;
 	}
 
 #photo-2018-1-3 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) top no-repeat;
 	background-size: contain;
 	}
 
 #photo-2018-1-4 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) top no-repeat;
 	background-size: contain;
 	}
 
 #photo-2018-1-5 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) top no-repeat;
 	background-size: contain;
 	}
 
 #photo-2018-1-6 {
-	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) center no-repeat;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/post-cover.jpg) top no-repeat;
 	background-size: contain;
 	}
 
