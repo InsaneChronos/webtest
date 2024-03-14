@@ -1768,7 +1768,7 @@ textarea:focus-visible {
 	font-family: "Magistral";
 	font-weight: 100;
 	font-style: normal;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 1000;
 	display: flex;
