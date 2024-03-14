@@ -1886,3 +1886,67 @@ textarea:focus-visible {
 	}
 
 /* ФОТОГРАФИИ (КОНЕЦ) */
+
+/* ВИДЕОРОЛИКИ (НАЧАЛО) */
+
+#video-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 112px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	}
+
+#video-list,
+#video-prev,
+#video-next {
+	width: 50px;
+	cursor: pointer;
+	/* position: relative; */
+	/* top: -50px; */
+	}
+
+#video-list:hover,
+#video-prev:hover,
+#video-next:hover {
+	filter: brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg);
+	}
+
+#video-list-title,
+#video-prev-title,
+#video-next-title {
+	width: 50px;
+	text-transform: uppercase;
+	font-size: 8px;
+	text-align: center;
+	}
+
+#video-list-button {
+	width: 50px;
+	height: 50px;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/videos.svg) center no-repeat;
+	background-size: contain;
+	}
+
+#video-prev-button {
+	width: 50px;
+	height: 50px;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
+	background-size: contain;
+	transform: rotate(180deg);
+	}
+
+#video-next-button {
+	width: 50px;
+	height: 50px;
+	background: url(https://raw.githubusercontent.com/InsaneChronos/webtest/main/assets/arrow-1.svg) center no-repeat;
+	background-size: contain;
+	}
+
+
+/* ВИДЕОРОЛИКИ (КОНЕЦ) */
