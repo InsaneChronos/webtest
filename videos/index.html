@@ -14,11 +14,17 @@
 
 <meta name="viewport" content="width=device-width" />
 
-<link rel="stylesheet" href="https://insanechronos.github.io/webtest/css/style.css" />
+<!-- <link rel="stylesheet" href="https://insanechronos.github.io/webtest/css/style.css" /> -->
+
+<link rel="stylesheet" href="D:/SVENTOYAR/css/style.css" />
 
 <link rel="stylesheet" href="https://insanechronos.github.io/webtest/css/fonts.css" />
 
-<script src="https://insanechronos.github.io/webtest/js/videos.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- <script src="https://insanechronos.github.io/webtest/js/videos.js" defer></script> -->
+
+<script src="D:/SVENTOYAR/js/videos.js" defer></script>
 
 </head>
 
@@ -96,13 +102,100 @@
 
 <div id="overlay" onclick="closeNav()"></div>
 
-<div id="content" class="fadeIn">
+<div id="content" class="fadeIn" style="width:100%;height:100%;padding:0;margin:0;top:0;">
+
+
+
+
+
+
+
+
+
+
+<ul id="video-player">
+
+<li class="video current">
+
+<div>
+
+<iframe src="https://www.youtube.com/embed/ycp1JH8Vt5Y?si=W-ClRTjDz1N8F5DH&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</li>
+
+<li class="video"><div>2</div></li>
+
+<li class="video"><div>3</div></li>
+
+<li class="video"><div>4</div></li>
+
+<li class="video"><div>5</div></li>
+
+<li class="video"><div>6</div></li>
+
+<li class="video"><div>7</div></li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="previews" class="slider">
+
+<div id="list">
+
+<button type="button" class="preview current">1</button>
+
+<button type="button" class="preview">2</button>
+
+<button type="button" class="preview">3</button>
+
+<button type="button" class="preview">4</button>
+
+<button type="button" class="preview">5</button>
+
+<button type="button" class="preview">6</button>
+
+<button type="button" class="preview">7</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="video-nav">
 
-<div id="video-list"><div id="video-list-button"></div><div id="video-list-title">ВСЕ</div></div>
-<div id="video-prev"><div id="video-prev-button"></div><div id="video-prev-title">ПРЕД.</div></div>
-<div id="video-next"><div id="video-next-button"></div><div id="video-next-title">СЛЕД.</div></div>
+<div id="video-list" onclick="videoList()"><div id="video-list-button"></div><div id="video-list-title">ВСЕ</div></div>
+
+<div id="video-prev">
+<button type="button" id="video-prev-button" class="button prev"><div id="video-prev-title">ПРЕД.</div></button>
+</div>
+
+<div id="video-next">
+<button type="button" id="video-next-button" class="button next"><div id="video-next-title">СЛЕД.</div></button>
+</div>
 
 </div>
 
