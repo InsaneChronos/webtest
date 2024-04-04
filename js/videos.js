@@ -3,6 +3,11 @@
 currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
 currentLinks.forEach(link => link.className += 'current-link');
 
+document.getElementById("topPage").style.background = "none";
+document.getElementById("footerPage").style.background = "none";
+document.getElementById("langSelect").style.background = "none";
+document.getElementById("secondLang").style.background = "none";
+
 var navMargin = document.getElementById("sidenav");
 var actualMargin = getComputedStyle(navMargin).marginLeft;
 
@@ -125,6 +130,66 @@ function selectLang() {
 		}
 
 	}
+
+
+
+
+
+function videoList() {
+
+	var listDisplay = document.getElementById("previews");
+	var actualDisplay = getComputedStyle(listDisplay).display;
+
+	document.getElementById("previews").style.display = "flex";
+	document.getElementById("video-list").style.filter = "brightness(105%) sepia(1) saturate(2.5) hue-rotate(350deg)";
+
+	if (actualDisplay == "flex") {
+		document.getElementById("previews").style.display = "none";
+		document.getElementById("video-list").style.filter = "none";
+		}
+
+	}
+
+
+
+
+
+
+
+function slider(flag, num) {
+	var current = $(".video.current"),
+	next,
+	index;
+	if (!flag) {
+	next = current.is(":last-child") ? $(".video").first() : current.next();
+	index = next.index();
+	} else if (flag === "preview") {
+	next = $(".video").eq(num);
+	index = num;
+	} else {
+	next = current.is(":first-child") ? $(".video").last() : current.prev();
+	index = next.index();
+	}
+	next.addClass("current");
+	current.removeClass("current");
+	$(".preview").eq(index).addClass("current").siblings().removeClass("current");
+	}
+
+$(".button").on("click", function() {
+	var flag = $(this).is(".prev") ? true : false;
+	slider(flag);
+	});
+
+$(".preview").on("click", function() {
+	if ($(this).is(".current")) return;
+	var num = $(this).index();
+	slider("preview", num);
+	});
+
+
+
+
+
 
 /* ------------------------- MOBILE VERSION ------------------------- */
 
